@@ -1,6 +1,6 @@
 +++
 date = "2015-05-14T04:33:14+09:00"
-description = "眠たさがすごいことになっている様子"
+description = "眠たさがすごいことになっている様子。"
 tags = "misc"
 title = "眠気"
 [menu]
