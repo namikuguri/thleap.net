@@ -3,7 +3,7 @@
 /* line-height */
 /* size */
 html {
-  font-family: "ヒラギノ明朝 ProN" , "HiraMinProN", "游明朝体", "Yu Mincho", serif;
+  font-family: "Lora", "リュウミン R-KL", "Ryumin Regular KL", "ヒラギノ明朝 ProN" , "Hiragino Mincho ProN", "游明朝体", "Yu Mincho", serif;
   font-size: 100%;
   color: black;
   line-height: 1.6; }
@@ -562,3 +562,19 @@ img {
 .site-message {
   margin: 10em 0;
   text-align: center; }
+
+.ease-in {
+  -webkit-animation-name: ease-in;
+          animation-name: ease-in;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease; }
+
+@-webkit-keyframes ease-in {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
