@@ -367,16 +367,19 @@ img {
 /* post */
 .post .work-description {
   margin-top: 0; }
-.post .work-url dt {
-  font-family: Roboto, Helvetica, sans-serif;
-  font-weight: 300;
-  float: left;
-  margin-right: 0.5em; }
-  .post .work-url dt::after {
-    content: ":";
-    margin-left: 0.25em; }
-.post .work-url dd {
-  margin-left: 0; }
+.post .work-url {
+  font-size: 0.75em; }
+  .post .work-url dt {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 300;
+    float: left;
+    margin-right: 0.5em; }
+    .post .work-url dt::after {
+      content: ":";
+      margin-left: 0.25em; }
+  .post .work-url dd {
+    margin-left: 0;
+    word-wrap: break-word; }
 .post a {
   text-decoration: underline; }
   .post a:hover, .post a:visited, .post a:active {

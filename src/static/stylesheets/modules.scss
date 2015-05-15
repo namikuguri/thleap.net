@@ -309,6 +309,7 @@
   }
 
   .work-url {
+    font-size: $small;
     dt {
       @include font-sans-serif;
       float: left;
@@ -320,6 +321,7 @@
     }
     dd {
       margin-left: 0;
+      word-wrap: break-word;
     }
   }
 
