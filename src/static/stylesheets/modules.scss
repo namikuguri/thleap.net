@@ -55,10 +55,16 @@
 
 .headline-slogan-sub {
   display: block;
-  margin-top: $x-small;
+  margin-top: $medium;
   margin-bottom: 0;
   font-style: italic;
   letter-spacing: 2px;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .headline-slogan-sub {
+    margin-top: $x-small;
+  }
 }
 
 .headline-slogan-sub-author {
