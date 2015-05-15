@@ -153,22 +153,29 @@ img {
   font-size: 2em; }
 
 .headline-slogan {
+  text-align: center; }
+
+.headline-slogan-main {
   font-family: "Dancing Script", Times, serif;
   display: block;
   font-size: 2.8em;
   font-weight: normal;
   letter-spacing: 3px;
-  line-height: 1.25;
-  text-align: center; }
+  line-height: 1.25; }
 
-.headline-lead {
+.headline-slogan-sub {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0;
   font-style: italic;
-  letter-spacing: 2px;
-  text-align: center; }
+  letter-spacing: 2px; }
 
+.headline-slogan-sub-author {
+  display: block; }
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .headline-slogan-sub-author {
+    display: inline; } }
 /* footline */
 .footline {
   margin-top: 6em; }

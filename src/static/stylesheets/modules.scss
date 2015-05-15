@@ -41,22 +41,34 @@
 }
 
 .headline-slogan {
+  text-align: center;
+}
+
+.headline-slogan-main {
   @include font-script;
   display: block;
   font-size: $xx-large - .2;
   font-weight: normal;
   letter-spacing: 3px;
   line-height: $lh-small;
-  text-align: center;
 }
 
-.headline-lead {
+.headline-slogan-sub {
   display: block;
   margin-top: $x-small;
   margin-bottom: 0;
   font-style: italic;
   letter-spacing: 2px;
-  text-align: center;
+}
+
+.headline-slogan-sub-author {
+  display: block;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .headline-slogan-sub-author {
+    display: inline;
+  }
 }
 
 /* footline */
