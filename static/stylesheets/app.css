@@ -165,11 +165,14 @@ img {
 
 .headline-slogan-sub {
   display: block;
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 0;
   font-style: italic;
   letter-spacing: 2px; }
 
+@media (min-width: 42em) and (min-height: 21em) {
+  .headline-slogan-sub {
+    margin-top: 0.5em; } }
 .headline-slogan-sub-author {
   display: block; }
 
