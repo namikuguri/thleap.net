@@ -1,7 +1,7 @@
 +++
 date = "2015-05-13T18:05:34+09:00"
 description = "thleap.net をリニューアル。このサイトでは、制作したデザインやイラスト、ブログの記事などを残していこうと思う。"
-tags = "announce"
+tags = "misc"
 title = "夜明け"
 [menu]
   [menu.global]
