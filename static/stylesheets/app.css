@@ -5,7 +5,7 @@
 html {
   font-family: "Lora", "リュウミン R-KL", "Ryumin Regular KL", "ヒラギノ明朝 ProN" , "Hiragino Mincho ProN", "游明朝体", "Yu Mincho", serif;
   font-size: 100%;
-  color: black;
+  color: #1f1f1f;
   line-height: 1.6; }
 
 @media (min-width: 84em) and (min-height: 42em) {
@@ -17,7 +17,7 @@ body {
   background-color: white; }
 
 a {
-  color: black;
+  color: #1f1f1f;
   text-decoration: none; }
 
 h1,
@@ -177,7 +177,7 @@ img {
     display: block;
     max-width: 100%;
     height: 1px;
-    background-color: black; }
+    background-color: #1f1f1f; }
 
 @media (min-width: 42em) and (min-height: 21em) {
   .footline {
@@ -232,7 +232,7 @@ img {
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: black; }
+    background-color: #1f1f1f; }
 
 @media (min-width: 42em) and (min-height: 21em) {
   .heading {
@@ -254,7 +254,7 @@ img {
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: black; }
+    background-color: #1f1f1f; }
 
 @media (min-width: 42em) and (min-height: 21em) {
   .metas-border {
@@ -304,7 +304,7 @@ img {
       display: block;
       width: 100%;
       height: 1px;
-      background-color: black;
+      background-color: #1f1f1f;
       transition: margin-left .5s ease; }
     .posts-item-title a:hover::after {
       margin-left: 100%; }
@@ -343,7 +343,7 @@ img {
   float: right;
   display: inline-block;
   width: 100%;
-  color: black;
+  color: #1f1f1f;
   text-decoration: none;
   text-align: right; }
   .posts-more-item::before {
@@ -367,16 +367,19 @@ img {
 /* post */
 .post .work-description {
   margin-top: 0; }
-.post .work-url dt {
-  font-family: Roboto, Helvetica, sans-serif;
-  font-weight: 300;
-  float: left;
-  margin-right: 0.5em; }
-  .post .work-url dt::after {
-    content: ":";
-    margin-left: 0.25em; }
-.post .work-url dd {
-  margin-left: 0; }
+.post .work-url {
+  font-size: 0.75em; }
+  .post .work-url dt {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 300;
+    float: left;
+    margin-right: 0.5em; }
+    .post .work-url dt::after {
+      content: ":";
+      margin-left: 0.25em; }
+  .post .work-url dd {
+    margin-left: 0;
+    word-wrap: break-word; }
 .post a {
   text-decoration: underline; }
   .post a:hover, .post a:visited, .post a:active {
@@ -447,7 +450,7 @@ img {
       content: "Source :";
       margin-right: 0.5em; }
     .post blockquote cite > a {
-      color: black; }
+      color: #1f1f1f; }
 .post hr {
   font-family: Roboto, Helvetica, sans-serif;
   font-weight: 300;
@@ -497,14 +500,14 @@ img {
 /* site */
 .site-link {
   display: inline-block;
-  color: black; }
+  color: #1f1f1f; }
   .site-link::after {
     content: "";
     display: block;
     margin-top: 0.25em;
     width: 0%;
     height: 1px;
-    background-color: black;
+    background-color: #1f1f1f;
     transition: width .5s ease; }
   .site-link:hover::after {
     width: 100%; }
@@ -565,11 +568,8 @@ img {
 
 .ease-in {
   -webkit-animation-name: ease-in;
-          animation-name: ease-in;
   -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease; }
+  -webkit-animation-timing-function: ease; }
 
 @-webkit-keyframes ease-in {
   0% {
