@@ -23,19 +23,21 @@
       </div>
 
       <div class="l-partition post">
-        <div class="l-partition-sub">
-          {{ with .Params.work_description }}
-            <p class="work-description">{{ . }}</p>
-          {{ end }}
-          {{ with .Params.work_url }}
-            <dl class="work-url">
-              <dt>URL</dt>
-              <dd>
-                <a href="{{ . }}">{{ . }}</a>
-              </dd>
-            </dl>
-          {{ end }}
-        </div>
+        {{ if .Params.work_url }}
+          <div class="l-partition-sub">
+            <p class="work-description">{{ .Params.work_description }}</p>
+              <dl class="work-url">
+                <dt>URL</dt>
+                <dd>
+                  <a href="{{ .Params.work_url }}">{{ .Params.work_url }}</a>
+                </dd>
+              </dl>
+          </div>
+        {{ else if .Params.work_description }}
+          <div class="l-partition-sub">
+            <p class="work-description">{{ .Params.work_description }}</p>
+          </div>
+        {{ end }}
         {{ .Content }}
       </div>
 
