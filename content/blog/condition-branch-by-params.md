@@ -38,6 +38,6 @@ title = "Params の有無による条件分岐"
 {{ end }}
 ```
 
-作品コンテンツだけが持ってるデータ（ `.Params.work_description`, `.Params.work_url` ）の有無で他のページとの出し訳をして、作品詳細ページだけで `.l-patition-sub` を出すようにした。
+作品コンテンツだけが持ってるデータ（ `.Params.work_description`, `.Params.work_url` ）の有無で他の詳細ページとの出し訳をして、作品詳細ページだけで `.l-patition-sub` を出すようにした。
 
 賢くできた感じはしないが、余計なものは削除できたので、うん、まぁ良いんじゃない。
