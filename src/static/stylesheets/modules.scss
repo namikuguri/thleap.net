@@ -391,7 +391,7 @@
   }
 
   table {
-    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
     th,
@@ -464,7 +464,7 @@
   }
 
   img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border: 1px solid $lightGray;
     border-radius: 2px;

@@ -418,7 +418,7 @@ img {
 .post h3 + img {
   margin-top: 0; }
 .post table {
-  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0; }
   .post table th,
@@ -476,7 +476,7 @@ img {
     line-height: 1;
     vertical-align: .5em; }
 .post img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border: 1px solid #ebebeb;
   border-radius: 2px;
