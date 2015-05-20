@@ -1,6 +1,6 @@
 +++
 date = "2015-05-20T23:54:00+09:00"
-description = ""
+description = "こしょうを何度も買い忘れてる。"
 tags = "misc"
 title = "こしょうがない × 3"
 
