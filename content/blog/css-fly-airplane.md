@@ -1,6 +1,6 @@
 +++
 date = "2015-05-22T19:53:01+09:00"
-description = "CSS アニメーションで飛行機を飛ばす"
+description = "CSS アニメーションで飛行機を飛ばす。"
 tags = "dev"
 title = "Fly Airplane"
 
