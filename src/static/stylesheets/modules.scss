@@ -111,7 +111,7 @@
     line-height: 1;
     vertical-align: top;
     &.active {
-      color: $gray;
+      text-decoration: line-through;
     }
     &.disabled {
       visibility: hidden;
