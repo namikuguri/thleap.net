@@ -85,7 +85,7 @@
     display: block;
     max-width: 100%;
     height: 1px;
-    background-color: $black;
+    background-color: $darkGray;
   }
 }
 
@@ -156,7 +156,7 @@
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: $black;
+    background-color: $darkGray;
   }
 }
 
@@ -183,7 +183,7 @@
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: $black;
+    background-color: $darkGray;
   }
 }
 
@@ -245,7 +245,7 @@
       display: block;
       width: 100%;
       height: 1px;
-      background-color: $black;
+      background-color: $darkGray;
       transition: margin-left .5s ease;
     }
     &:hover::after {
@@ -344,10 +344,12 @@
   }
 
   a {
-    text-decoration: underline;
+    border-bottom: 1px solid $darkGray;
+    text-decoration: none;
     &:hover,
     &:visited,
     &:active {
+      border-bottom: none;
       text-decoration: none;
     }
   }
