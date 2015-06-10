@@ -352,6 +352,11 @@
     }
   }
 
+  strong {
+    font-weight: normal;
+    border-bottom: 3px double $gray;
+  }
+
   p,
   table,
   ul,
