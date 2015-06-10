@@ -5,6 +5,8 @@
 html {
   font-family: "Lora", "リュウミン R-KL", "Ryumin Regular KL", "ヒラギノ明朝 ProN" , "Hiragino Mincho ProN", "游明朝体", "Yu Mincho", serif;
   font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #1f1f1f;
   line-height: 1.6; }
 
