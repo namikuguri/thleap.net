@@ -367,6 +367,7 @@
   dl,
   pre,
   blockquote,
+  figure,
   .image-double {
     margin-top: $large;
     margin-bottom: $large;
@@ -467,6 +468,16 @@
       color: $gray;
       line-height: 1;
       vertical-align: .5em;
+    }
+  }
+
+  figure {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    figcaption {
+      margin-top: $medium;
+      font-size: $small;
     }
   }
 
