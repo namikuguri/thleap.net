@@ -394,9 +394,6 @@ img {
   text-decoration: underline; }
   .post a:hover, .post a:visited, .post a:active {
     text-decoration: none; }
-.post strong {
-  font-weight: normal;
-  color: #f5143a; }
 .post p {
   margin-top: 1em;
   margin-bottom: 1em; }
