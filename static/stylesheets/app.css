@@ -404,6 +404,7 @@ img {
 .post dl,
 .post pre,
 .post blockquote,
+.post figure,
 .post .image-double {
   margin-top: 1.5em;
   margin-bottom: 1.5em; }
@@ -482,6 +483,13 @@ img {
     color: #d6d6d6;
     line-height: 1;
     vertical-align: .5em; }
+.post figure {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center; }
+  .post figure figcaption {
+    margin-top: 1em;
+    font-size: 0.75em; }
 .post img {
   max-width: 100%;
   height: auto;
