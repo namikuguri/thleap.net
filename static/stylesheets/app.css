@@ -524,7 +524,7 @@ img {
     margin-top: 0.25em;
     width: 0%;
     height: 1px;
-    background-color: #1f1f1f;
+    background-color: #6b6b6b;
     transition: width .5s ease; }
   .site-link:hover::after {
     width: 100%; }
