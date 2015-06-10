@@ -152,9 +152,9 @@
     position: absolute;
     left: auto;
     bottom: 50%;
-    margin-left: $xx-small;
+    margin-left: $x-small;
     display: inline-block;
-    width: 100%;
+      width: 100%;
     height: 1px;
     background-color: $darkGray;
   }
@@ -163,6 +163,9 @@
 @media (min-width: 42em) and (min-height: 21em) {
   .heading {
     width: $container-col-1;
+    &::after {
+      width: $large;
+    }
   }
 }
 
@@ -291,29 +294,27 @@
 }
 
 .posts-more-item {
-  position: relative;
-  float: right;
   display: inline-block;
-  width: 100%;
   color: $black;
   text-decoration: none;
-  text-align: right;
   &::before {
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: 50%;
     display: inline-block;
-    width: 100%;
+    margin-right: $x-small;
+    width: $xx-large;
     height: 1px;
-    background-color: $gray;
-    z-index: -1;
+    background-color: $darkGray;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .posts-more-item {
+    float: right;
   }
 }
 
 .posts-more-item-link {
-  padding-left: $medium;
-  background-color: $white;
   &::after {
     content: normal;
     width: 0;
