@@ -5,6 +5,8 @@
 html {
   font-family: "Lora", "リュウミン R-KL", "Ryumin Regular KL", "ヒラギノ明朝 ProN" , "Hiragino Mincho ProN", "游明朝体", "Yu Mincho", serif;
   font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #1f1f1f;
   line-height: 1.6; }
 
@@ -187,7 +189,7 @@ img {
     display: block;
     max-width: 100%;
     height: 1px;
-    background-color: #1f1f1f; }
+    background-color: #6b6b6b; }
 
 @media (min-width: 42em) and (min-height: 21em) {
   .footline {
@@ -238,15 +240,17 @@ img {
     position: absolute;
     left: auto;
     bottom: 50%;
-    margin-left: 0.25em;
+    margin-left: 0.5em;
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: #1f1f1f; }
+    background-color: #6b6b6b; }
 
 @media (min-width: 42em) and (min-height: 21em) {
   .heading {
-    width: 32.5%; } }
+    width: 32.5%; }
+    .heading::after {
+      width: 1.5em; } }
 /* meta */
 .metas {
   font-family: Roboto, Helvetica, sans-serif;
@@ -264,7 +268,7 @@ img {
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: #1f1f1f; }
+    background-color: #6b6b6b; }
 
 @media (min-width: 42em) and (min-height: 21em) {
   .metas-border {
@@ -314,7 +318,7 @@ img {
       display: block;
       width: 100%;
       height: 1px;
-      background-color: #1f1f1f;
+      background-color: #6b6b6b;
       transition: margin-left .5s ease; }
     .posts-item-title a:hover::after {
       margin-left: 100%; }
@@ -349,30 +353,24 @@ img {
   margin-bottom: 6em; }
 
 .posts-more-item {
-  position: relative;
-  float: right;
   display: inline-block;
-  width: 100%;
   color: #1f1f1f;
-  text-decoration: none;
-  text-align: right; }
+  text-decoration: none; }
   .posts-more-item::before {
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: 50%;
     display: inline-block;
-    width: 100%;
+    margin-right: 0.5em;
+    width: 3em;
     height: 1px;
-    background-color: #d6d6d6;
-    z-index: -1; }
+    background-color: #6b6b6b;
+    vertical-align: middle; }
 
-.posts-more-item-link {
-  padding-left: 1em;
-  background-color: white; }
-  .posts-more-item-link::after {
-    content: normal;
-    width: 0; }
+@media (min-width: 42em) and (min-height: 21em) {
+  .posts-more-item {
+    float: right; } }
+.posts-more-item-link::after {
+  content: normal;
+  width: 0; }
 
 /* post */
 .post .work-description {
@@ -391,9 +389,14 @@ img {
     margin-left: 0;
     word-wrap: break-word; }
 .post a {
-  text-decoration: underline; }
+  border-bottom: 1px solid #6b6b6b;
+  text-decoration: none; }
   .post a:hover, .post a:visited, .post a:active {
+    border-bottom: none;
     text-decoration: none; }
+.post strong {
+  font-weight: normal;
+  box-shadow: inset 0 -0.25em #fdd8de; }
 .post p,
 .post table,
 .post ul,
@@ -521,7 +524,7 @@ img {
     margin-top: 0.25em;
     width: 0%;
     height: 1px;
-    background-color: #1f1f1f;
+    background-color: #6b6b6b;
     transition: width .5s ease; }
   .site-link:hover::after {
     width: 100%; }
