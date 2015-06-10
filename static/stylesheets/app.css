@@ -394,16 +394,23 @@ img {
   text-decoration: underline; }
   .post a:hover, .post a:visited, .post a:active {
     text-decoration: none; }
-.post p {
-  margin-top: 1em;
-  margin-bottom: 1em; }
+.post p,
+.post table,
+.post ul,
+.post ol,
+.post dl,
+.post pre,
+.post blockquote,
+.post .image-double {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
 .post h2 {
   margin-top: 3em;
   margin-bottom: 0.5em;
   font-size: 2em; }
 .post h3 {
   margin-top: 1.5em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
   font-size: 1.5em; }
 .post h2 + p, .post h2 + ul, .post h2 + ol, .post h2 + blockquote, .post h2 + table, .post h2 + pre, .post h2 + img,
 .post h3 + p,

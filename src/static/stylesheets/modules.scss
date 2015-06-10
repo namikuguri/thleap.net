@@ -352,9 +352,16 @@
     }
   }
 
-  p {
-    margin-top: $medium;
-    margin-bottom: $medium;
+  p,
+  table,
+  ul,
+  ol,
+  dl,
+  pre,
+  blockquote,
+  .image-double {
+    margin-top: $large;
+    margin-bottom: $large;
   }
 
   h2 {
@@ -365,7 +372,7 @@
 
   h3 {
     margin-top: $large;
-    margin-bottom: $xx-small;
+    margin-bottom: $x-small;
     font-size: $large;
   }
 
