@@ -1,6 +1,6 @@
 +++
 date = "2015-06-11T20:07:13+09:00"
-description = "text-shadow でフォントを太く見せることはできるけど、ジャギるのであまり使わないほうが良いかもねという話。"
+description = "text-shadow でフォントを太く見せることはできるけど、これを使うと少し文字の輪郭ががたつく。"
 tags = "dev"
 title = "text-shadow で太字にするとジャギる"
 
