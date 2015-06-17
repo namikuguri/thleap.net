@@ -18,7 +18,7 @@ title = "Type DISCO"
 
 文字に付いている影は[こちらのブログ](http://brilliantsketch.com/make-long-shadow-effect-sketch/)で紹介されてるのと同じような感じで Motion Blur を使っておりますが、矩形を 45度傾けたて Blur の角度を -45度傾けた後は、マスクを用意するのが面倒だったのでグラデーションの開始位置を文字の中央に移動させて透明度 0 から色付けを開始するようにしています。
 
-![](/images/blog/type-disco/shot.png)
+![](/images/blog/type-disco/shot-setting-shadow-style.png)
 
 これはそこそこ使えそうだと思っています。しかし、「D」の左下を見てもらうと分かりますが影が少し手前に飛び出てしまうので、これには注意しましょう。
 
