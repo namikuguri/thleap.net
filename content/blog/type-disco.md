@@ -10,7 +10,7 @@ title = "Type DISCO"
 
 +++
 
-![](/images/blog/type-disco/image.png)
+![幅の異なる線を数本組み合わせて作られた「DISCO」という太い文字。グラデーションとロングシャドウで少し文字が浮き立つように置かれている](/images/blog/type-disco/image.png)
 
 本日は[こういうの](https://dribbble.com/shots/2063405-Ampersand)と[こういうの](https://dribbble.com/shots/2104243-Com-poot-er)を Dribbble で拝見いたしまして、気持ちが高ぶってきたところでこちらのものを作りました。
 
@@ -18,10 +18,10 @@ title = "Type DISCO"
 
 文字に付いている影は[こちらのブログ](http://brilliantsketch.com/make-long-shadow-effect-sketch/)で紹介されてるのと同じような感じで Motion Blur を使っておりますが、矩形を 45度傾けたて Blur の角度を -45度傾けた後は、マスクを用意するのが面倒だったのでグラデーションの開始位置を文字の中央に移動させて透明度 0 から色付けを開始するようにしています。
 
-![](/images/blog/type-disco/shot-setting-shadow-style.png)
+![Sketch上でグラデーションの開始位置を変更した後、alpha値0の白色からalpha値50の黒色でグラデーションをかける様子](/images/blog/type-disco/shot-setting-shadow-style.png)
 
 これはそこそこ使えそうだと思っています。しかし、「D」の左下を見てもらうと分かりますが影が少し手前に飛び出てしまうので、これには注意しましょう。
 
-![](/images/blog/type-disco/shot-type-d.png)
+![影が文字の右下だけでなく別の方向にも出てしまっている様子](/images/blog/type-disco/shot-type-d.png)
 
 それでは、バイビー。
