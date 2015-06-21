@@ -2,7 +2,7 @@
 date = "2015-06-21T23:35:47+09:00"
 description = "一日中眠った日は書くことが無くて困る。"
 tags = "misc"
-title = "眠り続けて16時間"
+title = "眠り続けて十六時間"
 
 [menu]
   [menu.global]
