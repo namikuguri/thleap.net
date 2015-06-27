@@ -21,6 +21,10 @@ Dribbble は公式アプリが無いので Posterized というのを使って�
 
 日常の決まったサイクルの中で自分の気持ちを新しい作品制作に向けるのはなかなか難しいと思うんだけど、こういったところからアイデアを拾って普段とは少し違ったデザインを作っていきたい。
 
-また、そのアイデアを拾える機会をできるだけ増やすには、携帯のアプリのような目につく場所にその存在を据えるのは重要だと思った。
+また、そのアイデアを拾える機会をできるだけ増やすには、携帯のアプリのような目につく場所にその存在を据えるのは重要だと思った。前より少しは見るようになったんじゃないかな。
 
-前より少しは見るようになったんじゃないかな。
+ちなみに今日は Dribbble の投稿作品を見てたんだけど、斜めに切り込んだデザインや斜めから見た角度のデザインが本当に多くなったなぁと思った。（あと虹色系はちょっとお腹いっぱい気味）
+
+- [Aware E-commerce UI Kit | Dribbble](https://dribbble.com/shots/2121039-Aware-E-commerce-UI-Kit?list=likes&offset=10)
+- [Mobile.design navigation | Dribbble](https://dribbble.com/shots/2123108-Mobile-design-navigation?list=likes&offset=7)
+- [Barclays Premier League 2014/15 Review // UI Concept | Dribbble](https://dribbble.com/shots/2122920-Barclays-Premier-League-2014-15-Review-UI-Concept?list=likes&offset=11)
