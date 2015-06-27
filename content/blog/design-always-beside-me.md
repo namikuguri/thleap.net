@@ -25,6 +25,6 @@ Dribbble は公式アプリが無いので Posterized というのを使って�
 
 ちなみに今日は Dribbble の投稿作品を見てたんだけど、斜めに切り込んだデザインや斜めから見た角度のデザインが本当に多くなったなぁと思った。（あと虹色系はちょっとお腹いっぱい気味）
 
-- [Aware E-commerce UI Kit | Dribbble](https://dribbble.com/shots/2121039-Aware-E-commerce-UI-Kit?list=likes&offset=10)
-- [Mobile.design navigation | Dribbble](https://dribbble.com/shots/2123108-Mobile-design-navigation?list=likes&offset=7)
-- [Barclays Premier League 2014/15 Review // UI Concept | Dribbble](https://dribbble.com/shots/2122920-Barclays-Premier-League-2014-15-Review-UI-Concept?list=likes&offset=11)
+- [Aware E-commerce UI Kit | Dribbble](https://dribbble.com/shots/2121039-Aware-E-commerce-UI-Kit)
+- [Mobile.design navigation | Dribbble](https://dribbble.com/shots/2123108-Mobile-design-navigation)
+- [Barclays Premier League 2014 / 15 Review // UI Concept | Dribbble](https://dribbble.com/shots/2122920-Barclays-Premier-League-2014-15-Review-UI-Concept)
