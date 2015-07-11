@@ -10,6 +10,11 @@ title = "デザイン雑誌を読み終えて"
 
 +++
 
+<figure>
+  <img src="/images/blog/design-magazine/image.png" alt="デザインにまつわる二冊の雑誌">
+  <figcaption>MdN EXTRA Vol.1（左）と BRUTUS NO.378（右）</figcaption>
+</figure>
+
 「[MdN EXTRA Vol.1 マンガ&アニメのグラフィックデザイン](http://goo.gl/IW9cNG)」を読み終えた。
 
 文字やロゴ、書籍の装丁やCD・DVD のジャケットデザインの考え方、作業の考え方がインタビュー形式で多くまとまっていて良かった。他には、雑誌に掲載されているデザインがどちらかというと女性をターゲットにしたものが多く、好みのデザインが何点も見れたのは嬉しかった。
