@@ -1,6 +1,6 @@
 +++
 date = "2015-08-17T21:59:23+09:00"
-description = "Do/Doing/Done/Cancel の四つのリストで分ける。"
+description = "タスクのステータスを Do/Doing/Done/Cancel の四つのリストで分ける。"
 tags = "misc"
 title = "やらないタスク"
 
