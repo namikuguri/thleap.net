@@ -51,8 +51,8 @@ ol {
   ul ol,
   ol ul,
   ol ol {
-    margin-top: 0.25em;
-    margin-bottom: 0.25em; }
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
 
 ul {
   list-style-type: disc; }
@@ -411,6 +411,12 @@ img {
 .post .image-double {
   margin-top: 1.5em;
   margin-bottom: 1.5em; }
+.post ul ul,
+.post ul ol,
+.post ol ul,
+.post ol ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
 .post h2 {
   margin-top: 3em;
   margin-bottom: 0.5em;

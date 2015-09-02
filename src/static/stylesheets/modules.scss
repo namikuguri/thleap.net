@@ -373,6 +373,15 @@
     margin-bottom: $large;
   }
 
+  ul,
+  ol {
+    ul,
+    ol {
+      margin-top: $x-small;
+      margin-bottom: $x-small;
+    }
+  }
+
   h2 {
     margin-top: $xx-large;
     margin-bottom: $x-small;
