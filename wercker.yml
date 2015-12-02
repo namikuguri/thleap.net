@@ -1,8 +1,8 @@
 box: debian
 build:
   steps:
-      - arjen/hugo-build
-        version: "0.14"
+    - arjen/hugo-build
+      version: "0.14"
 
 deploy:
   steps:
