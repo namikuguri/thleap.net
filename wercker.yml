@@ -1,8 +1,8 @@
 box: wercker/default
 build:
   steps:
-    - arjen/hugo-build:
-        version: "HEAD"
+      - arjen/hugo-build@1.8.0
+
 deploy:
   steps:
     - lukevivier/gh-pages@0.2.1:
