@@ -90,3 +90,5 @@ Sentinel: production-sentinel-12
 Infrastructure stack を変更（変更前はClassicになってた）。
 
 ![](/images/blog/recovering-wercker/infrastructure-stack-select.png)
+
+これで以前のようにビルドに成功した。めでたし (?) 。
