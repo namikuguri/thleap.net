@@ -92,3 +92,16 @@ Infrastructure stack を変更（変更前はClassicになってた）。
 ![](/images/blog/recovering-wercker/infrastructure-stack-select.png)
 
 これで以前のようにビルドに成功した。めでたし (?) 。
+
+## まだダメだった（デプロイに失敗）
+フォーラムを見ているとまさに[同じようなエラー](https://discuss.gohugo.io/t/automated-hugo-deployments-anywhere-using-wercker/539/39)を出している人がいた。それに対して、次の人がコメントで `wercker.yml` の `deploy: steps:` の後に2行ほど足せば何とかなるでみたいなこと言ってるので、その通りに。
+
+```
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+...
+```
+
+Done.
