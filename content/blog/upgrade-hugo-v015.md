@@ -1,8 +1,8 @@
 +++
 date = "2015-12-03T04:26:34+09:00"
-description = ""
+description = "HUGO のバージョンを 0.15 にした。"
 tags = "dev"
-title = "HUGO のバージョンを 0.15 にした。"
+title = "Upgrade HUGO v0.15"
 
 [menu]
   [menu.global]
