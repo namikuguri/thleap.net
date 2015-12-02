@@ -1,10 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-{{ if eq .Url "/" }}
+{{ if eq .URL "/" }}
   <title>{{ .Site.Title }}</title>
-{{ else if eq .Url "/blog/" }}
+{{ else if eq .URL "/blog/" }}
   <title>Blog - {{ .Site.Title }}</title>
-{{ else if eq .Url "/work/" }}
+{{ else if eq .URL "/work/" }}
   <title>Work - {{ .Site.Title }}</title>
 {{ else if eq .Slug "about" }}
   <title>About - {{ .Site.Title }}</title>

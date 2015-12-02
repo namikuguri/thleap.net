@@ -2,7 +2,7 @@
 {{ if gt $pag.TotalPages 1 }}
   <ul class="pagination pagination-with-pages">
     <li class="pagination-prev{{ if not $pag.HasPrev }} disabled{{ end }}">
-      <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.Url }}{{ end }}" aria-label="Previous">
+      <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous">
         <span aria-hidden="true">
           <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
         </span>
@@ -15,12 +15,12 @@
         </li>
       {{ else }}
         <li>
-          <a href="{{ .Url }}">{{ .PageNumber }}</a>
+          <a href="{{ .URL }}">{{ .PageNumber }}</a>
         </li>
       {{ end }}
     {{ end }}
     <li class="pagination-next{{ if not $pag.HasNext }} disabled{{ end }}">
-      <a href="{{ if $pag.HasNext }}{{ $pag.Next.Url }}{{ end }}" aria-label="Next">
+      <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next">
         <span aria-hidden="true">
           Next<i class="icon ico-arrow-next pagination-next-icon"></i>
         </span>
