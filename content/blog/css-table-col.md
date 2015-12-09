@@ -14,6 +14,8 @@ title = "テーブルにおける列のあつかい"
 
 ---
 
+今回は CSS のお話。
+
 もう一ヶ月も前になるが、[W3C CSS Module 仕様書もくもく会@東京](http://tokyo-css-module-specs.connpass.com/)という勉強会に参加した。そのときに、[CSS 2.2 テーブルの章](http://momdo.github.io/css2/tables.html)を読んで（聴いて？）テーブルの列の存在を知ったので、そのあたりを少し振り返ろうと思う。
 
 まず、僕は CSS で `display: table-column` を使ったこともなければ、HTML で `colgroup` や `col` 要素を使ったこともなかった。たまたま機会が無かっただけだが、その[指定の方法](http://www.w3schools.com/tags/tag_col.asp)は使い方を知ったいまでも少し不思議な感じがしている。
