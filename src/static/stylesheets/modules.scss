@@ -470,16 +470,16 @@
   hr {
     @include font-sans-serif;
     clear: both;
-    margin: $xx-large 0;
+    margin-top: $xx-large;
+    margin-bottom: $x-large;
     border: none;
     background-color: transparent;
     text-align: center;
     &::before {
-      content: "…";
-      font-size: $xx-large;
+      content: "***";
+      font-size: $medium;
       color: $gray;
       line-height: 1;
-      vertical-align: .5em;
     }
   }
 
