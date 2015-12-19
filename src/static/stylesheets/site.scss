@@ -2,25 +2,17 @@
 .site-link {
   display: inline-block;
   color: $black;
-  &::after {
-    content: "";
-    display: block;
-    margin-top: $xx-small;
-    width: 0%; // Here, Do not forget the units for iOS8 Safari
-    height: 1px;
-    background-color: $darkGray;
-    transition: width .5s ease;
-  }
-  &:hover::after {
-    width: 100%;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s ease;
+  &:hover,
+  &:active,
+  &:visited{
+    border-color: $black;
   }
 }
 
 .site-link.is-active {
-  &::after {
-    background-color: $red;
-    width: 100%;
-  }
+  border-bottom: 1px solid $red;
 }
 
 .site-logo {
@@ -62,7 +54,6 @@
   &::before {
     content: "/";
     display: inline-block;
-    margin-top: -4px;
     margin-right: $xx-small;
     font-size: $xx-large;
     color: $red;

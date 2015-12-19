@@ -3,7 +3,7 @@
 /* line-height */
 /* size */
 html {
-  font-family: "Lora", "リュウミン R-KL", "Ryumin Regular KL", "ヒラギノ明朝 ProN" , "Hiragino Mincho ProN", "游明朝体", "Yu Mincho", serif;
+  font-family: "Lora", "リュウミン R-KL", "Ryumin Regular KL", "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN" , "Hiragino Mincho ProN", serif;
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,13 +16,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: white; }
+  background-color: #f9fafa; }
 
 main {
   display: block; }
 
 a {
-  color: #1f1f1f;
+  color: #296bae;
   text-decoration: none; }
 
 h1,
@@ -63,7 +63,7 @@ ol {
   ol > li {
     position: relative; }
   ol > li::before {
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: "Fira Sans", Helvetica, sans-serif;
     font-weight: 300;
     position: absolute;
     top: 0;
@@ -78,13 +78,11 @@ img {
 
 #header {
   height: 7em;
-  margin-bottom: 3em;
-  background-color: white; }
+  margin-bottom: 3em; }
 
 #footer {
   margin-top: 6em;
-  padding: 1em 0;
-  background-color: white; }
+  padding: 1em 0; }
 
 @media (min-width: 42em) and (min-height: 21em) {
   #footer {
@@ -201,7 +199,7 @@ img {
     max-width: 67.5%; } }
 /* pagination */
 .pagination {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Fira Sans", Helvetica, sans-serif;
   font-weight: 300;
   margin-top: 1em;
   margin-bottom: 0;
@@ -213,8 +211,8 @@ img {
     margin: 0 0.5em;
     line-height: 1;
     vertical-align: top; }
-    .pagination li.active {
-      text-decoration: line-through; }
+    .pagination li > a {
+      color: #1f1f1f; }
     .pagination li.disabled {
       visibility: hidden; }
     .pagination li .pagination-prev-icon {
@@ -256,7 +254,7 @@ img {
       width: 1.5em; } }
 /* meta */
 .metas {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Fira Sans", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 0.75em; }
 
@@ -314,17 +312,13 @@ img {
   margin-bottom: 0.25em;
   font-size: 1em; }
   .posts-item-title a {
-    overflow: hidden;
-    display: inline-block; }
-    .posts-item-title a::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: #6b6b6b;
-      transition: margin-left .5s ease; }
-    .posts-item-title a:hover::after {
-      margin-left: 100%; }
+    border-bottom: 1px solid #296bae;
+    transition: border-color .2s ease; }
+    .posts-item-title a:hover, .posts-item-title a:active {
+      border-color: transparent; }
+    .posts-item-title a:visited {
+      color: #621f84;
+      border-color: #621f84; }
 
 .posts-item-description {
   margin-top: 0.25em;
@@ -350,7 +344,7 @@ img {
       width: auto;
       height: 100%; } }
 .posts-more {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Fira Sans", Helvetica, sans-serif;
   font-weight: 300;
   overflow: hidden;
   margin-bottom: 6em; }
@@ -371,9 +365,8 @@ img {
 @media (min-width: 42em) and (min-height: 21em) {
   .posts-more-item {
     float: right; } }
-.posts-more-item-link::after {
-  content: normal;
-  width: 0; }
+.posts-more-item-link {
+  color: #1f1f1f; }
 
 /* post */
 .post .work-description {
@@ -381,7 +374,7 @@ img {
 .post .work-url {
   font-size: 0.75em; }
   .post .work-url dt {
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: "Fira Sans", Helvetica, sans-serif;
     font-weight: 300;
     float: left;
     margin-right: 0.5em; }
@@ -392,14 +385,16 @@ img {
     margin-left: 0;
     word-wrap: break-word; }
 .post a {
-  border-bottom: 1px solid #6b6b6b;
-  text-decoration: none; }
-  .post a:hover, .post a:visited, .post a:active {
-    border-bottom: none;
-    text-decoration: none; }
+  border-bottom: 1px solid #296bae;
+  transition: border-color .2s ease; }
+  .post a:hover, .post a:active {
+    border-color: transparent; }
+  .post a:visited {
+    color: #621f84;
+    border-color: #621f84; }
 .post strong {
-  font-weight: normal;
-  box-shadow: inset 0 -0.25em #fdd8de; }
+  font-weight: bold;
+  color: #f5143a; }
 .post p,
 .post table,
 .post ul,
@@ -451,12 +446,18 @@ img {
     border-bottom: 1px solid #ebebeb; }
 .post pre,
 .post code {
+  padding: 0 0.25em;
+  border-radius: 2px;
+  background-color: #eef0f1;
   font-family: courier, monospace;
-  font-size: 1em;
+  font-size: small;
   line-height: 1.25; }
 .post pre {
   white-space: pre-wrap;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  padding: 1em; }
+  .post pre > code {
+    padding: 0; }
 .post blockquote {
   margin: 0;
   margin-top: 1em;
@@ -464,7 +465,7 @@ img {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 1em;
-  border-left: 1px solid #d6d6d6; }
+  border-left: 4px solid #eef0f1; }
   .post blockquote cite {
     display: block;
     margin-top: 0.5em;
@@ -472,26 +473,26 @@ img {
     text-align: right;
     font-style: normal; }
     .post blockquote cite::before {
-      font-family: Roboto, Helvetica, sans-serif;
+      font-family: "Fira Sans", Helvetica, sans-serif;
       font-weight: 300;
       content: "Source :";
       margin-right: 0.5em; }
     .post blockquote cite > a {
       color: #1f1f1f; }
 .post hr {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Fira Sans", Helvetica, sans-serif;
   font-weight: 300;
   clear: both;
-  margin: 3em 0;
+  margin-top: 3em;
+  margin-bottom: 2em;
   border: none;
   background-color: transparent;
   text-align: center; }
   .post hr::before {
-    content: "…";
-    font-size: 3em;
+    content: "***";
+    font-size: 1em;
     color: #d6d6d6;
-    line-height: 1;
-    vertical-align: .5em; }
+    line-height: 1; }
 .post figure {
   margin-left: 0;
   margin-right: 0;
@@ -534,21 +535,14 @@ img {
 /* site */
 .site-link {
   display: inline-block;
-  color: #1f1f1f; }
-  .site-link::after {
-    content: "";
-    display: block;
-    margin-top: 0.25em;
-    width: 0%;
-    height: 1px;
-    background-color: #6b6b6b;
-    transition: width .5s ease; }
-  .site-link:hover::after {
-    width: 100%; }
+  color: #1f1f1f;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s ease; }
+  .site-link:hover, .site-link:active, .site-link:visited {
+    border-color: #1f1f1f; }
 
-.site-link.is-active::after {
-  background-color: #f5143a;
-  width: 100%; }
+.site-link.is-active {
+  border-bottom: 1px solid #f5143a; }
 
 .site-logo {
   display: inline-block;
@@ -562,7 +556,7 @@ img {
     width: 0; }
 
 .site-nav {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Fira Sans", Helvetica, sans-serif;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
@@ -577,14 +571,13 @@ img {
   .site-nav li {
     margin-left: 2em; } }
 .site-byline {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Fira Sans", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 0.75em;
   text-align: right; }
   .site-byline::before {
     content: "/";
     display: inline-block;
-    margin-top: -4px;
     margin-right: 0.25em;
     font-size: 3em;
     color: #f5143a;

@@ -110,8 +110,8 @@
     margin: 0 $x-small;
     line-height: 1;
     vertical-align: top;
-    &.active {
-      text-decoration: line-through;
+    & > a {
+      color: $black;
     }
     &.disabled {
       visibility: hidden;
@@ -241,18 +241,15 @@
   margin-bottom: $xx-small;
   font-size: $medium;
   a {
-    overflow: hidden;
-    display: inline-block;
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: $darkGray;
-      transition: margin-left .5s ease;
+    border-bottom: 1px solid $blue;
+    transition: border-color .2s ease;
+    &:hover,
+    &:active {
+      border-color: transparent;
     }
-    &:hover::after {
-      margin-left: 100%;
+    &:visited {
+      color: $purple;
+      border-color: $purple;
     }
   }
 }
@@ -315,10 +312,7 @@
 }
 
 .posts-more-item-link {
-  &::after {
-    content: normal;
-    width: 0;
-  }
+  color: $black;
 }
 
 /* post */
@@ -345,19 +339,21 @@
   }
 
   a {
-    border-bottom: 1px solid $darkGray;
-    text-decoration: none;
+    border-bottom: 1px solid $blue;
+    transition: border-color .2s ease;
     &:hover,
-    &:visited,
     &:active {
-      border-bottom: none;
-      text-decoration: none;
+      border-color: transparent;
+    }
+    &:visited {
+      color: $purple;
+      border-color: $purple;
     }
   }
 
   strong {
-    font-weight: normal;
-    box-shadow: inset 0 (-$xx-small) $lightRed;
+    font-weight: bold;
+    color: $red;
   }
 
   p,
@@ -429,14 +425,21 @@
 
   pre,
   code {
+    padding: 0 $xx-small;
+    border-radius: 2px;
+    background-color: $lightSteelBlue;
     @include font-mono;
-    font-size: $medium;
+    font-size: small;
     line-height: $lh-small;
   }
 
   pre {
     white-space: pre-wrap;
     word-wrap: break-word;
+    padding: $medium;
+    & > code {
+      padding: 0;
+    }
   }
 
   blockquote {
@@ -446,7 +449,7 @@
     padding-top: $x-small;
     padding-bottom: $x-small;
     padding-left: $medium;
-    border-left: 1px solid $gray;
+    border-left: 4px solid $lightSteelBlue;
     cite {
       display: block;
       margin-top: $x-small;
@@ -467,16 +470,16 @@
   hr {
     @include font-sans-serif;
     clear: both;
-    margin: $xx-large 0;
+    margin-top: $xx-large;
+    margin-bottom: $x-large;
     border: none;
     background-color: transparent;
     text-align: center;
     &::before {
-      content: "…";
-      font-size: $xx-large;
+      content: "***";
+      font-size: $medium;
       color: $gray;
       line-height: 1;
-      vertical-align: .5em;
     }
   }
 
