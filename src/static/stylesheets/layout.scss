@@ -1,13 +1,11 @@
 #header {
   height: $xxxx-large - $xx-large;
   margin-bottom: $xx-large;
-  background-color: $white;
 }
 
 #footer {
   margin-top: $xxx-large;
   padding: $medium 0;
-  background-color: $white;
 }
 
 @media (min-width: 42em) and (min-height: 21em) {
