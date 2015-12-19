@@ -394,8 +394,8 @@ img {
     border-bottom: none;
     text-decoration: none; }
 .post strong {
-  font-weight: normal;
-  box-shadow: inset 0 -0.25em #fdd8de; }
+  font-weight: bold;
+  color: #f5143a; }
 .post p,
 .post table,
 .post ul,
