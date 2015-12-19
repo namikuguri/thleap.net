@@ -447,12 +447,18 @@ img {
     border-bottom: 1px solid #ebebeb; }
 .post pre,
 .post code {
+  padding: 0 0.25em;
+  border-radius: 2px;
+  background-color: #eef0f1;
   font-family: courier, monospace;
-  font-size: 1em;
+  font-size: small;
   line-height: 1.25; }
 .post pre {
   white-space: pre-wrap;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  padding: 1em; }
+  .post pre > code {
+    padding: 0; }
 .post blockquote {
   margin: 0;
   margin-top: 1em;
