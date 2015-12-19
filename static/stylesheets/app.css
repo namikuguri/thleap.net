@@ -22,7 +22,7 @@ main {
   display: block; }
 
 a {
-  color: #1f1f1f;
+  color: #296bae;
   text-decoration: none; }
 
 h1,
@@ -211,6 +211,8 @@ img {
     margin: 0 0.5em;
     line-height: 1;
     vertical-align: top; }
+    .pagination li > a {
+      color: #1f1f1f; }
     .pagination li.disabled {
       visibility: hidden; }
     .pagination li .pagination-prev-icon {
@@ -310,17 +312,13 @@ img {
   margin-bottom: 0.25em;
   font-size: 1em; }
   .posts-item-title a {
-    overflow: hidden;
-    display: inline-block; }
-    .posts-item-title a::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: #6b6b6b;
-      transition: margin-left .5s ease; }
-    .posts-item-title a:hover::after {
-      margin-left: 100%; }
+    border-bottom: 1px solid #296bae;
+    transition: border-color .2s ease; }
+    .posts-item-title a:hover, .posts-item-title a:active {
+      border-color: transparent; }
+    .posts-item-title a:visited {
+      color: #621f84;
+      border-color: #621f84; }
 
 .posts-item-description {
   margin-top: 0.25em;
@@ -367,9 +365,8 @@ img {
 @media (min-width: 42em) and (min-height: 21em) {
   .posts-more-item {
     float: right; } }
-.posts-more-item-link::after {
-  content: normal;
-  width: 0; }
+.posts-more-item-link {
+  color: #1f1f1f; }
 
 /* post */
 .post .work-description {
@@ -388,11 +385,13 @@ img {
     margin-left: 0;
     word-wrap: break-word; }
 .post a {
-  border-bottom: 1px solid #6b6b6b;
-  text-decoration: none; }
-  .post a:hover, .post a:visited, .post a:active {
-    border-bottom: none;
-    text-decoration: none; }
+  border-bottom: 1px solid #296bae;
+  transition: border-color .2s ease; }
+  .post a:hover, .post a:active {
+    border-color: transparent; }
+  .post a:visited {
+    color: #621f84;
+    border-color: #621f84; }
 .post strong {
   font-weight: bold;
   color: #f5143a; }
@@ -536,21 +535,14 @@ img {
 /* site */
 .site-link {
   display: inline-block;
-  color: #1f1f1f; }
-  .site-link::after {
-    content: "";
-    display: block;
-    margin-top: 0.25em;
-    width: 0%;
-    height: 1px;
-    background-color: #6b6b6b;
-    transition: width .5s ease; }
-  .site-link:hover::after {
-    width: 100%; }
+  color: #1f1f1f;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s ease; }
+  .site-link:hover, .site-link:active, .site-link:visited {
+    border-color: #1f1f1f; }
 
-.site-link.is-active::after {
-  background-color: #f5143a;
-  width: 100%; }
+.site-link.is-active {
+  border-bottom: 1px solid #f5143a; }
 
 .site-logo {
   display: inline-block;
