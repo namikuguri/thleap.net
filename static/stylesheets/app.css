@@ -213,8 +213,6 @@ img {
     margin: 0 0.5em;
     line-height: 1;
     vertical-align: top; }
-    .pagination li.active {
-      text-decoration: line-through; }
     .pagination li.disabled {
       visibility: hidden; }
     .pagination li .pagination-prev-icon {

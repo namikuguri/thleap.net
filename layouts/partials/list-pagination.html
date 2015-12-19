@@ -1,6 +1,5 @@
 {{ $pag := $.Paginator }}
-{{ if gt $pag.TotalPages 1 }}
-  <ul class="pagination pagination-with-pages">
+<ul class="pagination">
     <li class="pagination-prev{{ if not $pag.HasPrev }} disabled{{ end }}">
       <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous">
         <span aria-hidden="true">
@@ -10,12 +9,8 @@
     </li>
     {{ range $pag.Pagers }}
       {{ if eq . $pag }}
-        <li class="active">
-          <span>{{ .PageNumber }}</span>
-        </li>
-      {{ else }}
         <li>
-          <a href="{{ .URL }}">{{ .PageNumber }}</a>
+          <span>{{ .PageNumber }} / {{ .TotalPages }} </span>
         </li>
       {{ end }}
     {{ end }}
@@ -26,5 +21,4 @@
         </span>
       </a>
     </li>
-  </ul>
-{{ end }}
+</ul>

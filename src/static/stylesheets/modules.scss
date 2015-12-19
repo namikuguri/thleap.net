@@ -110,9 +110,6 @@
     margin: 0 $x-small;
     line-height: 1;
     vertical-align: top;
-    &.active {
-      text-decoration: line-through;
-    }
     &.disabled {
       visibility: hidden;
     }
