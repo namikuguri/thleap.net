@@ -491,7 +491,7 @@ img {
   .post hr::before {
     content: "***";
     font-size: 1em;
-    color: #d6d6d6;
+    color: #1f1f1f;
     line-height: 1; }
 .post figure {
   margin-left: 0;
