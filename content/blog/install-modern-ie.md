@@ -1,6 +1,6 @@
 +++
 date = "2016-03-08T01:15:19+09:00"
-description = "もだんあいいーいんすとーる！"
+description = "もだんあいいーいんすとーる。"
 tags = "dev"
 title = "Install modern.IE"
 
