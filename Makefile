@@ -6,6 +6,11 @@ prefix:
 blog:
 	hugo new blog/$(var).md
 	vim content/blog/$(var).md
+blog-img:
+	hugo new blog/$(var).md
+	vim content/blog/$(var).md
+	mkdir static/images/blog/$(var)
+	open -a Finder.app static/images/blog/$(var)
 # post to wok section
 work:
 	hugo new work/$(var).md
