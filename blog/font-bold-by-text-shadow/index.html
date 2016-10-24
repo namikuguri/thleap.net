@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>text-shadow で太字にするとジャギる - thleap.net</title>
+
+
+
+  <meta name="description" content="text-shadow でフォントを太く見せることはできるけど、これを使うと少し文字の輪郭ががたつく。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">text-shadow で太字にするとジャギる</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-06-11" class="metas-item">2015.06.11</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        <p><code>text-shadow</code> でフォントを太くするという表現がある。こういう感じの:</p>
+
+<pre><code class="language-css">.shadow-bold {
+  text-shadow: .1px .1px 0 black,
+               -.1px .1px 0 black,
+               .1px -.1px 0 black,
+               -.1px -.1px 0 black,
+               0 0 .1px rgba(0, 0, 0, .1);
+}
+</code></pre>
+
+<p>ただ、これをすると文字の輪郭ががたつき、少しピクセルの粗が目だつ。それが気になったというだけの話。</p>
+
+<p>それだけの話なんだけど、JSFiddle で書いたサンプルと、それを Mac PC の各ブラウザで撮ったスクリーンショットだけ載っけておこう。赤丸がついてるのが <code>text-shadow</code> を使って太くしたとこ。</p>
+
+<iframe width="100%" height="300" src="//jsfiddle.net/thleap/tnrsw5un/4/embedded/result%2Ccss/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p><img src="/images/blog/font-bold-by-text-shadow/shots.png" alt="" /></p>
+
+<hr />
+
+<p>書いてる途中で何書こうとしてたか忘れた&hellip; 。</p>
+
+<p>あと、誤った <code>font-family</code> の指定を直してスクリーンショットを撮り直すの最大限のダルみがあった。</p>
+
+<ul>
+<li>だめ: <code>font-family: &quot;Yu Gothic&quot;</code></li>
+<li>おっけー: <code>font-family: &quot;YuGothic&quot;</code></li>
+</ul>
+
+<p>Firefox は <code>Yu Gothic</code> の指定でも効いてたけど。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/styling-the-reading-contents/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/trap-of-adjacent-selector/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

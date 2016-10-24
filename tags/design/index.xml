@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on thleap.net</title>
+    <link>http://thleap.net/tags/design/</link>
+    <description>Recent content in Design on thleap.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 24 Oct 2016 20:56:54 +0900</lastBuildDate>
+    <atom:link href="http://thleap.net/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dice 108</title>
+      <link>http://thleap.net/blog/dice108/</link>
+      <pubDate>Mon, 24 Oct 2016 20:56:54 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/dice108/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/dice108/image.png&#34; alt=&#34;描いたサイコロ&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/&#34;&gt;http://corocoro-dice.tumblr.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thleap/corocoro-dice&#34;&gt;https://github.com/thleap/corocoro-dice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;サイコロをつくった。&lt;br /&gt;
+1種類につき6パターン、それを100種類くらいつくったのだから、なかなかだろう。&lt;/p&gt;
+
+&lt;p&gt;しかし、「はたしてこいつはサイコロか？」と思うようなものも少なからずあり（少なからず、だ）、最後には自分が何をつくっているのかわからなくなった。いつものことだ。&lt;/p&gt;
+
+&lt;p&gt;さて、こんな様子じゃまただらだらたらたら文章を続けてしまうだけだから、「具体的に」いこうじゃないか。そうなれば、まず自分が気に入ったサイコロからあげようじゃないか。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/151936215404&#34;&gt;http://corocoro-dice.tumblr.com/post/151936215404&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152117095734&#34;&gt;http://corocoro-dice.tumblr.com/post/152117095734&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152148261479&#34;&gt;http://corocoro-dice.tumblr.com/post/152148261479&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;シンプルなのがいいんじゃない。余計なものが入り込んでなくて、レイアウトがサイコロらしくて、マスの数も大きい。すぐにサイコロとわかるのがやっぱりいい。&lt;/p&gt;
+
+&lt;p&gt;それじゃあつぎはワースト3。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152148231849&#34;&gt;http://corocoro-dice.tumblr.com/post/152148231849&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152119094159&#34;&gt;http://corocoro-dice.tumblr.com/post/152119094159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152197188739&#34;&gt;http://corocoro-dice.tumblr.com/post/152197188739&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;1みたいなやつは他にも何種類かあるが、これはサイコロとしては最悪。パッと見でマスの数がわからないのはダメ。ゲームとか、実際の利用シーンを思い浮かべてみるとわかる。2や3の模様に関しても同じような感想。ダメ。&lt;/p&gt;
+
+&lt;p&gt;ずいぶん具体的に振り返りができた。&lt;br /&gt;
+つぎは 7日間で 100個の模様描くのつらいって話でも。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>thleap.net v2.1 のアイデア 2日目</title>
+      <link>http://thleap.net/blog/thleap-net-v2-1-idea02/</link>
+      <pubDate>Mon, 04 Jul 2016 04:01:36 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/thleap-net-v2-1-idea02/</guid>
+      <description>
+
+&lt;p&gt;全体的に「キモいレイアウト」を狙ってる。表現がよくないかもしれないけど、他の Web サイトでは見ないようなレイアウト、という意味だ。これをこのサイトの個性にしたい。&lt;/p&gt;
+
+&lt;p&gt;また、デザインのムードとして、このサイトではクラシックな雰囲気と大胆さをを狙いにいってる。&lt;/p&gt;
+
+&lt;h2 id=&#34;ブログページ:435d8afb1d609ae52128383186e76aa6&#34;&gt;ブログページ&lt;/h2&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/blog.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;ブログ一覧ページ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;一覧ページには、カテゴリーとシリーズで絞り込むナビゲーションをつけた。「カテゴリーが Design、シリーズが hogehoge」みたいな感じで、2つの条件が重なった場合のことを考えるとすこし面倒そうだが。&lt;/p&gt;
+
+&lt;p&gt;ブログ一覧ページには、そのカテゴリーのすべての記事を載せる予定だ。（ページネーションを用意しない）&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/blog-article.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;ブログ記事ページ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;詳細ページは中央揃えで配置するようにした。左右どちらかに配置するのと比べて、画像の配置とか、いろいろ自由度が高そうだから。&lt;/p&gt;
+
+&lt;h2 id=&#34;作品ページ:435d8afb1d609ae52128383186e76aa6&#34;&gt;作品ページ&lt;/h2&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/sketch.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;作品一覧ページ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;作品を単調に並べて落ち着いた雰囲気にしたくなかったのでこのような形に。また、作品によって最適な向きやサイズも異なるので、できるだけ自由度の高いレイアウトにしようと考えている。&lt;/p&gt;
+
+&lt;p&gt;作品の絞り込みには製作時期を使うことにした。単純だけど、作品ページは成長の記録として残したかったので、これに一番合う絞り込みをつけた。&lt;/p&gt;
+
+&lt;p&gt;年代別のページには、その年のすべての作品を載せる予定だ。（ページネーションを用意しない）&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/sketch-article.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;作品記事ページ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;一枚絵などに使うレイアウト。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/sketch-article-pj--x-rect.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;作品記事ページ、プロジェクトなどで関連した画像が複数ある場合、かつ横長の画像が多い場合&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/sketch-article-pj--y-rect.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;作品記事ページ、プロジェクトなどで関連した画像が複数ある場合、かつ縦長の画像が多い場合&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;プロジェクトなどになると、作品を複数載せるページも出てくる。そういった場合に、単調に画像を建てに並べていくだけではおもしろさがなく、作品ページを訪れた人は最後まで見る気になれないかもしれない。&lt;/p&gt;
+
+&lt;p&gt;複雑なレイアウトになるので Markdown 記法だけでなく HTML を使うことになるだろう。プロジェクトの作品ページはいくつかパターンをつくって、がんばってレイアウトを組む予定。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>thleap.net v2.1 のアイデア</title>
+      <link>http://thleap.net/blog/thleap-net-v2-1-idea/</link>
+      <pubDate>Sun, 03 Jul 2016 04:18:19 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/thleap-net-v2-1-idea/</guid>
+      <description>&lt;p&gt;トップページのデザインだけ作った。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea/home.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;トップページのデザイン&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea/shot.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;より現実感をもたせるために、ブラウザの枠にデザインをはめたイメージ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;ノリで始めたわりには結構いいとこまできた。&lt;/p&gt;
+
+&lt;p&gt;このページや他のページでやりたいこともいくつか出てきたので、箇条書きにしてまとめとく。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Work から Sketch に
+
+&lt;ul&gt;
+&lt;li&gt;30分くらいで作ったようなカジュアルな作品もサイトに載せたいので、メニュー名を変更したい&lt;/li&gt;
+&lt;li&gt;上記のように Sketch に変更すると更新頻度も上がるので、もう少し見られる位置におきたい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;画面幅いっぱいのデザイン
+
+&lt;ul&gt;
+&lt;li&gt;ブログと作品、両方が見てもらえるようにする（いま作品が目につきにくい）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;リンクエリアの拡大
+
+&lt;ul&gt;
+&lt;li&gt;スマホとかでもリンクをタップしやすいように&lt;/li&gt;
+&lt;li&gt;カーソル移動が少なくて済むように&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;キャッチコピーの撤去
+
+&lt;ul&gt;
+&lt;li&gt;ブログでキャッチコピー、気恥ずかしさがある&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;名前ではなくアカウント名に変更
+
+&lt;ul&gt;
+&lt;li&gt;気恥ずかしさがある&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;あとは希望。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;シリーズの追加
+
+&lt;ul&gt;
+&lt;li&gt;とくに読書感想文系の内容は複数記事になることが多いから、カテゴリーとは別にシリーズほしいなって&lt;/li&gt;
+&lt;li&gt;いま変に Hugo のカテゴリーとシリーズ使ってるので、それもあって&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;AMP 対応
+
+&lt;ul&gt;
+&lt;li&gt;ページ読み込み速度がいい感じなりそうなので、対応してみたい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;記事モジュールの拡充
+
+&lt;ul&gt;
+&lt;li&gt;いまあるモジュールの見た目も変えたいし、まだないモジュールも作りたい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;まぁこんなとこかな。&lt;/p&gt;
+
+&lt;p&gt;ブログや作品の一覧ページもできてないし、記事の詳細ページも手つかずの状態で夢だけが膨らむ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>デザイン記事へのコメント 20160630</title>
+      <link>http://thleap.net/blog/20160630/</link>
+      <pubDate>Fri, 01 Jul 2016 00:09:50 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/20160630/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://threem-design.com/web-design/synthesis2/&#34;&gt;フォトショップ初心者でもできる！プロ並みの画像合成で自然になじませる方法を解説。 | スリームデザイン&lt;/a&gt;&lt;br /&gt;
+写真の合成ってこうやるんだ、へー。複数の写真の合成っていろいろやることあるのね。描画モードをオーバーレイにするとなじむけど彩度が高すぎる、だから色調調整で彩度を落とす、っていうはなるほどなって思った。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.webcreativepark.net/2016/06/29-231739.html&#34;&gt;Re : Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い！ - to-R&lt;/a&gt;&lt;br /&gt;
+昨日発見した&lt;a href=&#34;http://www.cherrypieweb.com/weblog/technical/20160629025615.php&#34;&gt;遊ゴシックの記事&lt;/a&gt;に対する記事。Windows の遊ゴシックの標準ウエイトは Light じゃなくて Regular、その他もろもろ問題のある箇所が指摘されてる。記事に書いてあることを全部鵜呑みにしてはイカンねと思ったけど、両者の記事に対する検証はなにもしてない。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blogs.adobe.com/creativestation/web-201606update-illustrator-photoshop&#34;&gt;【2016年6月のアプデ内容を検証！】ついにAiに「アセット書き出し」機能が搭載！ Psはフォント周りの機能がブラッシュアップ | Adobe Creative Station&lt;/a&gt;&lt;br /&gt;
+Illustrator で Web デザイン作るっていうニーズは、こうやって新機能で制作をサポートするくらいにはあるのかな。個人的には Illustrator と Photoshop にはもうこれ以上機能を盛り込んでほしくないと思うんだけど。機能が多すぎていちいちどのメニューに内包されてたか覚えてないし、最近メニューバーのヘルプ検索使ってメニューにアクセスしてるし&amp;hellip; 。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://creator.dwango.co.jp/7700.html&#34;&gt;アプリデザインの7ステップ | dwango creators&amp;rsquo; blog（ドワンゴクリエイターズブログ）&lt;/a&gt;&lt;br /&gt;
+今日読んだ記事で一番良かった。デザイナーとしてプロジェクトに入って、どういった役割を担って何をアウトプットするか、順を追って説明されていてわかりやすかった。記事の文章はわかりやすく、言葉もキャッチーに感じるものが多かったので、しばらく記憶に残ってそう。&lt;/p&gt;
+
+&lt;p&gt;ガガガッと書いて、とくに見直さずに寝る。&lt;/p&gt;
+
+&lt;p&gt;文章は滅茶苦茶かもしれないが、このへんの整理は未来の俺がやってくれるはず。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>デザイン記事へのコメント 20160629</title>
+      <link>http://thleap.net/blog/20160629/</link>
+      <pubDate>Thu, 30 Jun 2016 02:23:54 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/20160629/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://yakst.com/ja/posts/3985&#34;&gt;なぜAtomはVimを置き換えられないのか - Yakst&lt;/a&gt;&lt;br /&gt;
+Vim のコンポーザビリティーの力っていうのを初めて聴いたわ。&amp;rdquo;d コマンドは、動作に関するコマンドと一緒に組み合わせます。&amp;rdquo; って感じで、組み合わせによって力を発揮エディターなんだな。（まぁまぁ長く使ってるのに理解してない）&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://konifar-zatsu.hatenadiary.jp/entry/2016/06/29/193911&#34;&gt;無駄な議論を減らすために使ってる言葉 - Konifar&amp;rsquo;s ZATSU&lt;/a&gt;&lt;br /&gt;
+「必要な人だけに絞って会議やりません？」みたいなのはよく聞く。日常的に遭遇する出来事なので、言葉のバリエーション用意しておくと便利そう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cherrypieweb.com/weblog/technical/20160629025615.php&#34;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？ - Cherry Pie Web&lt;/a&gt;&lt;br /&gt;
+遊ゴシック使うときは font-weight: 500 、覚えておこう。Windows と Mac で表示違うっていうの今日はじめて知ったけど。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://anond.hatelabo.jp/20160629082647&#34;&gt;ソフトウェアエンジニアが転職するときに気をつけること - はてな匿名ダイアリー&lt;/a&gt;&lt;br /&gt;
+外の会社のことを知る方法が書いてあって、コンパクトに必要なことがまとめられてると思った。自分や周りにに問いかけて、自分の会社の姿を映してみるのもおもしろいかも。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://greatappstimeline.xyz/&#34;&gt;Great Apps Timeline&lt;/a&gt;&lt;br /&gt;
+過去と比べると、SoundCloud は曲を録れるし聴けるアプリから、曲を聴くことにフォーカスしたアプリに変わったよね（録音機能がすごく奥のほうに隠された）。iOS だけのスクリーンショットだし、サイトの読み込みが遅いから次に開くことは無さそうなサイトだけどおもしろかった。&lt;/p&gt;
+
+&lt;p&gt;このタイプの記事を何回くらい続けるか、自分でもまったく想像できてない。&lt;/p&gt;
+
+&lt;p&gt;あんまり続けたい記事内容ではないけど、楽なのでとりあえずブログ書くっていうのには良いんだよな。&lt;/p&gt;
+
+&lt;p&gt;あと昨日タブキーが使えなくなったことに気付いたけど、今日また新しく使えなくなってるキーを見つけた。なんて呼ぶか知らんけど、Markdown でコードを囲むときのアレ。はー&amp;hellip; 。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>デザイン記事へのコメント 20160628</title>
+      <link>http://thleap.net/blog/20160628/</link>
+      <pubDate>Wed, 29 Jun 2016 02:19:14 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/20160628/</guid>
+      <description>&lt;p&gt;誕生日プレゼントにフォントを欲しがる先輩&lt;br /&gt;
+&lt;a href=&#34;http://anond.hatelabo.jp/20160628131933&#34;&gt;http://anond.hatelabo.jp/20160628131933&lt;/a&gt;&lt;br /&gt;
+ありそうな話じゃん、って思った。&lt;/p&gt;
+
+&lt;p&gt;DeSs第〇.七回「運動」中村勇吾　メインタグ〈プログラム〉に行ってきた話&lt;br /&gt;
+&lt;a href=&#34;http://www.cbc-net.com/blog/sln/2016/06/27/dess-yugonakamura/&#34;&gt;http://www.cbc-net.com/blog/sln/2016/06/27/dess-yugonakamura/&lt;/a&gt;&lt;br /&gt;
+川の話ぶっちゃけわかんなかったけど、いつかわかるように成りたいって気持ち。&lt;/p&gt;
+
+&lt;p&gt;配色がうまくいく、デザイナーが覚えておきたい7つの鉄板ステップ&lt;br /&gt;
+&lt;a href=&#34;http://photoshopvip.net/91446&#34;&gt;http://photoshopvip.net/91446&lt;/a&gt;&lt;br /&gt;
+グローバル化を意識した時に、色の問題って一気に難しくなりそう。&lt;/p&gt;
+
+&lt;p&gt;Adobe XDのリピートグリッドをもっと便利に扱う方法&lt;br /&gt;
+&lt;a href=&#34;http://uxmilk.jp/40397&#34;&gt;http://uxmilk.jp/40397&lt;/a&gt;&lt;br /&gt;
+リピートグリッドは使わないと全貌がわからないけど、Adobe XD おもしろそう。&lt;/p&gt;
+
+&lt;p&gt;ひさしぶりに自宅の MBP 開いたら Tab が反応しなくなっててすごくがっかりしてる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>永</title>
+      <link>http://thleap.net/blog/moji-ei/</link>
+      <pubDate>Sat, 26 Mar 2016 19:50:46 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/moji-ei/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/moji-ei/image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;「&lt;a href=&#34;http://goo.gl/aeGEIw&#34;&gt;もじ部&lt;/a&gt;」って本を読んでる。書体の制作話をデザイナー自身にインタビューしていく本。おもしろい。&lt;/p&gt;
+
+&lt;p&gt;まだ読み始めたばかりで 30ページくらいしか読めてないけど、制作の話を聞いてたら自分でも何か作ってみたくなったので、とりあえずそばにあったノートを手にとって一文字書いた。それがこのブログ記事の最初に載せているイメージ。&lt;/p&gt;
+
+&lt;p&gt;書く文字は何でも良かったんだけど、書の世界には「永字八法」という言葉があるらしく、&amp;rdquo;永&amp;rdquo; という字には筆使いの基本的な要素がつめ込まれてるようなのでこの文字に。詳しくは&lt;a href=&#34;http://www.akibatec.net/wabunfont/study/basic/basic.html&#34;&gt;和文フォント大図鑑&lt;/a&gt;さんのページを見れば良いと思う。&lt;/p&gt;
+
+&lt;p&gt;この本と、あと一冊別の書体の本を読んだら、もうちょっと大きな何かを作りたい（気持ち）。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;4月中にすっきりすべてのことを終わらすのは無理そう。&lt;/p&gt;
+
+&lt;p&gt;これからもいろいろ汗水鼻水たらしつつ、のんびりやろうと決めた。&lt;/p&gt;
+
+&lt;p&gt;あとこういう「がんばろう」みたいなのを書くのも面倒くさいから、ちょっと控える。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Restart bilibili!!</title>
+      <link>http://thleap.net/blog/restart-bilibili/</link>
+      <pubDate>Sun, 06 Mar 2016 23:37:15 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/restart-bilibili/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/restart-bilibili/image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;このブログと似たようなもので、&lt;a href=&#34;http://bilibili-calendar.tumblr.com/&#34;&gt;日めくりカレンダー&lt;/a&gt;も去年の年末で更新が止まってた。12月31日で更新を止めたままでも良かったんだけど、もう少し頑張れそうだから続けてみよう。&lt;/p&gt;
+
+&lt;p&gt;とりあえず現在の日付に追いつくまで、約60日の日めくりカレンダーを作らないといけない。その日の分のカレンダーを作りつつ、溜め込んだカレンダーを作るのはしんどそうだな&amp;hellip; 。はひー。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>なるほどデザイン</title>
+      <link>http://thleap.net/blog/naruhodo-design/</link>
+      <pubDate>Sat, 16 Jan 2016 15:00:27 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/naruhodo-design/</guid>
+      <description>&lt;p&gt;「&lt;a href=&#34;http://www.amazon.co.jp/gp/product/4844365177/&#34;&gt;なるほどデザイン&lt;/a&gt;」という本を読んだ。良い本だった。&lt;/p&gt;
+
+&lt;p&gt;公式の&lt;a href=&#34;http://naruhodo-design.com/&#34;&gt;紹介サイト&lt;/a&gt;も Web ではあまり見ないレイアウト表現と、最近の Web サイトらしいマウスオーバー時のにぎやかな表現が光る面白いデザインになっている。&lt;/p&gt;
+
+&lt;p&gt;本に関してコメントしておくと、丁寧かつ簡潔に書かれた文章は内容が理解しやすく、セクションごとに大きく異なる様相を持つデザインは見ていて飽きない。扉絵の個性ある写真やアクセントに添えられた可愛らしいイラスト、豊富なデザインの例も手伝って、かなり読みやすい本になっている。&lt;/p&gt;
+
+&lt;p&gt;本の中で紹介されている考え方や手法にのっとり、&lt;strong&gt;この本そのものが優れたデザイン&lt;/strong&gt;として成り立っているようだ。&lt;/p&gt;
+
+&lt;p&gt;そんな本書で抑えておきたいポイントをここにメモしておこうと思ったのだが、どうやら自分が知らなかった・身につけたいポイントが多すぎたようで&amp;hellip; 、ちょっと量が多くなりそうなのでメモは次の機会にまわす。&lt;/p&gt;
+
+&lt;p&gt;少しでも気になった人は書店へ Go 。手元に置いておく価値は十分にある本だと思う。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7日間でマスターするレイアウト基礎講座 7/7</title>
+      <link>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-7/</link>
+      <pubDate>Thu, 14 Jan 2016 02:45:00 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-7/</guid>
+      <description>
+
+&lt;p&gt;7日目のレッスン。今日で&lt;a href=&#34;http://goo.gl/No7AFL&#34;&gt;7日間でマスターするレイアウト基礎講座&lt;/a&gt;はおわり！&lt;/p&gt;
+
+&lt;p&gt;最終日の今日は、形を創り出すヒント 6つを勉強した。&amp;rdquo;形を創り出すヒント&amp;rdquo; という言葉がいまいちピントこなかったので、&amp;rdquo;デザインにちょっとした個性を創り出すヒント&amp;rdquo; という言葉に勝手に置き換えて内容を理解した。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リズム &amp;hellip; 同じ形、もしくは似たような形を一つの流れに沿うように配置する&lt;/li&gt;
+&lt;li&gt;対比 &amp;hellip; 有機的な形と無機的な形、直線的なラインと曲線的なラインなど、対比する要素を並べる&lt;/li&gt;
+&lt;li&gt;アクセント &amp;hellip; 文字に色を付けたり写真を傾けたり、目立たせたい要素を強調する&lt;/li&gt;
+&lt;li&gt;比例（プロポーション） &amp;hellip; 黄金比のような人々が美しいと感じる比率なども頭に置きながら、矩形の比率を意識して配置する&lt;/li&gt;
+&lt;li&gt;バランス &amp;hellip; 似通ったサイズで要素を配置すると穏やかな印象になるが、要素の中でワンポイントだけサイズを変えると緊張関係が現る。バランスを取るか、わざと崩してみるかを考えながら配置する&lt;/li&gt;
+&lt;li&gt;融合 &amp;hellip; 離れていてもひと目見て同じに感じるものを配置すると、その間に配置された要素も含めてデザインが融合される&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;最後のレッスンは復讐問題もなく、内容もそれぞれ簡潔であっさりしていた。&lt;/p&gt;
+
+&lt;h2 id=&#34;一冊の本を振り返って:17fd51ee8a6fe04dd18b9192520d1b96&#34;&gt;一冊の本を振り返って&lt;/h2&gt;
+
+&lt;p&gt;この本はレイアウトを構成する 8つの様式要素と 8つの造形要素を説明していた。例として毎回悪いデザイン/良いデザインが出てくるので、違いがよくわかって理解が早かったように感じるし、何より優れたデザインは見ていて楽しかった。&lt;/p&gt;
+
+&lt;p&gt;ときどき出てくる「 ONE MORE SAMPLE 」は特に参考になるものが多く、実際の制作現場でもデザインに盛り込むエッセンスとして活用できそうだ。&lt;/p&gt;
+
+&lt;p&gt;この本を通してレイアウトの基本がちょっとだけわかった気がした。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7日間でマスターするレイアウト基礎講座 6/7</title>
+      <link>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-6/</link>
+      <pubDate>Tue, 12 Jan 2016 19:45:59 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-6/</guid>
+      <description>&lt;p&gt;6日目のレッスン。レッスンすべてを終えるまであと 1日。&lt;/p&gt;
+
+&lt;p&gt;今日は造形に関する 8つの原則のうち、&lt;a href=&#34;http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-5/&#34;&gt;昨日の 2つ&lt;/a&gt;に続いて残りの 6つを学んだ。リスト形式で簡単に紹介する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;群化&lt;/strong&gt;（グループ化） &amp;hellip; 関係を整理して、意味合いの似ている要素を近くにまとめて配置する&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;あいまいさは不安&lt;/strong&gt; &amp;hellip; 整列と群化をしっかりと行い、要素が何と関連しているかわからないようなあいまいな配置は避ける&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;流れを整理する&lt;/strong&gt; &amp;hellip; 視線を最終的にどこに導きたいかを考えた上で、縦、横、斜めの方向線を持つデザイン要素を順序よく並べること。基本的には縦と横など、対立する方向線をもつ要素を近づけないようにする&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;余白は主役の領地&lt;/strong&gt; &amp;hellip; まわりに十分な余白を確保して主役を引き立てること。上品なデザインにするときは、ジャンプ率を上げて要素を大きくするよりもこの手法が生きることが多い&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;四隅を押さえる&lt;/strong&gt; &amp;hellip; 誌面の四隅に小物や文章を配置し、誌面全体を引き締めること&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;版面線を利用する&lt;/strong&gt; &amp;hellip; 版面とマージンの境界線を意識して配置を行うこと（版面については &lt;a href=&#34;http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-3/&#34;&gt;3日目のレッスン&lt;/a&gt;で学んだ）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ざっとこんな感じだった。悪い例/良い例の Before &amp;amp; After がわずかな差しかなくてわかりづらいものもいくつかあったけど、そのわずかな違いがデザインのレベルを数段引き上げていたように思う。&lt;/p&gt;
+
+&lt;p&gt;どうやら小さなことに気づける奴がモテるデザイナーっぽいぞ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7日間でマスターするレイアウト基礎講座 5/7</title>
+      <link>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-5/</link>
+      <pubDate>Tue, 12 Jan 2016 01:32:19 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-5/</guid>
+      <description>&lt;p&gt;5日目のレッスン。&lt;a href=&#34;http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-4/&#34;&gt;前回&lt;/a&gt;で様式に関するレッスンが終了し、今回からは造形に関して学んでいくことになる。といっても本書ではここをいささかいさみ足で進めるようで、今回と次のレッスンで造形に関する話を終わらせるようだ。&lt;/p&gt;
+
+&lt;p&gt;そんな 5日目のレッスンは&lt;strong&gt;主役を明示せよ&lt;/strong&gt;という話と&lt;strong&gt;準主役は離せ&lt;/strong&gt;という話だった。&lt;/p&gt;
+
+&lt;p&gt;主役を明示するには、主役のまわりに十分な余白を取るか主役のサイズを大きくすれば良い。他にも色々方法はあるが、一番シンプルな方法としてはこの 2つだろう。&lt;/p&gt;
+
+&lt;p&gt;準主役を離す理由としては、1つは主役を引き立たせるためで、もう 1つは誌面（デザインを組む場所）を広く自由に見せるためだ。下の図ではの左右両端に主役と準主役を離して配置することで誌面に広がりを持たせ、その間に挟まれた空間にゆとりを作っている。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/layout-basic-course-to-master-in-7-days-lesson-5/image.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;ここでは右側のオレンジの部分を主役、左側の青色の部分を準主役としている&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;主役を主役らしく見せるデザイン手法を学ぶことも大切だけど、何を主役にするかを明確にすることが一番大事だよ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7日間でマスターするレイアウト基礎講座 4/7</title>
+      <link>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-4/</link>
+      <pubDate>Mon, 11 Jan 2016 10:27:43 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-4/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://goo.gl/No7AFL&#34;&gt;7日間でマスターするレイアウト基礎講座&lt;/a&gt;の4日目のレッスン。今回は&lt;strong&gt;構成の 3原則&lt;/strong&gt;（揃えの方向）と&lt;strong&gt;書体のイメージ&lt;/strong&gt;についての話だった。様式に関する原則はこれにて終了し、次の 5日目のレッスンからは造形に関する話が展開されていく予定だ。&lt;/p&gt;
+
+&lt;p&gt;構成の 3原則と聞くと何を指しているかわからないが、簡単に言えば書式やデザイン要素を揃える方向を示す原則のことだ（この本では）。&lt;/p&gt;
+
+&lt;p&gt;以下のリストは揃えの方向と、それぞれが持つ印象を説明したものだ。この中の自然型とはグリッドフリーと同じようなもので、一切のラインを意識せずに要素を配置する組型のことである。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;左右揃え型 &amp;hellip; 合理的、標準的、ビジネス向き&lt;/li&gt;
+&lt;li&gt;中央揃え型 &amp;hellip; 優雅、上品、格調高い&lt;/li&gt;
+&lt;li&gt;自然型 &amp;hellip; 自由、のびのび、元気&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;こう言われてみると、配置に対する印象というのは確かに存在するように感じる。たとえば、結婚式の招待状などは中央揃えで組まれているからこそ、あの品格あるたたずまいを持っているのかもしれない。&lt;/p&gt;
+
+&lt;p&gt;しかしその反面、中央揃えを安易に使用したことで、安っぽい印象がついたり、長い文章が読みづらくなっているものも時々みかける。組型にはそれぞれの特性があり、それを理解してから使う必要がある。&lt;/p&gt;
+
+&lt;p&gt;組型に関する話はこれくらいにして、ここからは書体のイメージに関する話に移る。&lt;/p&gt;
+
+&lt;p&gt;まずは書体のジャンルとその印象を本書から抜き出して簡単に説明する。ファンシー書体は、現在ディスプレイ書体と呼ばれているものと捉えて良さそうだ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ゴシック体 &amp;hellip; 新鮮で理性的&lt;/li&gt;
+&lt;li&gt;明朝体 &amp;hellip; 穏やかで中庸&lt;/li&gt;
+&lt;li&gt;筆文字 &amp;hellip; 伝統的で保守的&lt;/li&gt;
+&lt;li&gt;ファンシー（新書体） &amp;hellip; 新しくて気軽&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;今読んでいる本が出版されてから 10年以上経っているので、それぞれ書体のイメージは少し変わっているかもしれない。&lt;/p&gt;
+
+&lt;p&gt;特にこの 10年でインターネットが多くの人に広まり、そのほとんどの Web サイトで使用されているゴシック体はすでに普遍化しつつあるため、この媒体では新鮮さが欠けてきているかもしれない。&lt;/p&gt;
+
+&lt;p&gt;また、これは個人の印象も多分に入っているが、筆文字からは伝統的というイメージより先に「古めかしい」というイメージが先に伝わってくる。これには少し悪い方の意味が含まれている。&lt;/p&gt;
+
+&lt;p&gt;ところで、書体のイメージを考えるときは文字の太さやサイズ、文章を組んだ時の字間/行間/字詰めについても意識しておく必要がある。日本語の場合、行間は全角の 3 分の 2 程度のアキを作っておくと読みやすく、字詰めは標準 20 ~ 30文字、最低でも一行の文字数は 34文字以内にするのが良いとされている。&lt;/p&gt;
+
+&lt;p&gt;あと、大きな文字を引き立たせるために小さな文字をそばに置くなど、文字を扱う上では他にも様々な手法があることを覚えておこう。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7日間でマスターするレイアウト基礎講座 3/7</title>
+      <link>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-3/</link>
+      <pubDate>Sun, 10 Jan 2016 21:45:45 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-3/</guid>
+      <description>&lt;p&gt;勢いにのって&lt;a href=&#34;http://goo.gl/No7AFL&#34;&gt;7日間でマスターするレイアウト基礎講座&lt;/a&gt;の 3日目のレッスン！今日は&lt;strong&gt;グリッド拘束率&lt;/strong&gt;と&lt;strong&gt;版面率&lt;/strong&gt;の話。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://goo.gl/xDq0To&#34;&gt;グリッド&lt;/a&gt;に関してはすでに説明不要かと思う。グリッド拘束率は、このグリッドにデザイン上の要素がどれだけ沿っているかを表す。グリッドにまったく沿わずに配置されたデザインのことをグリッドフリーと呼ぶ。&lt;/p&gt;
+
+&lt;p&gt;グリッドに沿ってレイアウトを組むと、理性的で落ち着いた雰囲気になり、デザインにどっしりとした重みがでる。グリッドからはずしてレイアウトを組むと、楽しく自由な雰囲気になり、デザインに軽やかさがでる。&lt;/p&gt;
+
+&lt;p&gt;デザイン要素をグリッドから一つもはずすことなく並べるとおもしろさに欠けるが、同じ状態でも写真の外型を変えてみるだけで良くなることがある。たとえば、角版を切り抜き版に変えるだけでも大きな違いが生まれるはずだ。&lt;/p&gt;
+
+&lt;p&gt;さて、版面率。天地左右のマージンを除いた場所のことを版面（はんめん、はんづら）という。また、誌面などのデザインを配置する場所に対して、版面の占める面積を版面率という。版面率が高いほど天地左右のマージンは少なくなる。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/layout-basic-course-to-master-in-7-days-lesson-3/image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;版面率は版面の中の余白もカウントする。そのため、版面そのものは大きくても、中の余白がたっぷり取られていれば版面率は実質的に下がることになる。（このへんが「版面率」という言葉のややこしいとこだと思う）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;本を読み終わって内容が分かってるつもりになっても、こうやって説明しようとするとうまくいかないな。かーっ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>7日間でマスターするレイアウト基礎講座 2/7</title>
+      <link>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-2/</link>
+      <pubDate>Sun, 10 Jan 2016 20:43:57 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/layout-basic-course-to-master-in-7-days-lesson-2/</guid>
+      <description>&lt;p&gt;昨日読み始めた&lt;a href=&#34;http://goo.gl/No7AFL&#34;&gt;7日間でマスターするレイアウト基礎講座&lt;/a&gt;の2日目。今日は&lt;strong&gt;文字のジャンプ率&lt;/strong&gt;と&lt;strong&gt;写真のジャンプ率&lt;/strong&gt;の話だった。どちらもデザイン様式に大きく関わってく要素だ。&lt;/p&gt;
+
+&lt;p&gt;文字のジャンプ率は本文の大きさを基準にして決定される。誌面の場合、大見出しから中見出し、リード、本文、注釈などがあり、目的によってそれぞれジャンプ率を調整する必要がある。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/layout-basic-course-to-master-in-7-days-lesson-2/image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;文字のジャンプ率を高く設定することで、新聞のような図版率が低い媒体でも読者にとって読みやすく、親しみやすい存在にすることができる。&lt;/p&gt;
+
+&lt;p&gt;ジャンプ率を上げたときの印象としては、ジャンプ率が低いときと比べて活気的で楽しげな雰囲気になる。使う書体やタイトルの言葉によっては、鋭く尖った印象など、別の強い印象を与えることも可能だ。&lt;/p&gt;
+
+&lt;p&gt;また、文字のジャンプ率を調整する場合は余白の使い方にも考慮したい。本文とほとんど同じ文字サイズのタイトルでも、まわりに十分な余白を取ることでタイトルの存在を際立たせることができる。&lt;/p&gt;
+
+&lt;p&gt;写真のジャンプ率を上げたときのに効果としては、文字のジャンプ率を上げたときとまったく同じというわけにはいかない。&lt;/p&gt;
+
+&lt;p&gt;写真はそれ自身に込められたメッセージ性が強く、たとえばクールな俳優の写真を誌面にどれだけ大きく出しても、そこに活気的なイメージは湧かない。大きな写真を使えばその分俳優のクールさが強く打ち出されるだけだ。&lt;/p&gt;
+
+&lt;p&gt;つまり写真の場合は、伝えたいメッセージをその写真がどれだけ含んでいるかによって最適なサイズを決定する必要が出てくる。&lt;/p&gt;
+
+&lt;p&gt;あと、大小様々な写真をデザイン上に散らすことで、そこにリズミカルな動きをつけることができる。&lt;/p&gt;
+
+&lt;p&gt;とかなんとかいろいろ。写真はちょっと自分の感想を盛り込みすぎて話がジャンプ率の話題から外に出てしまったけど、 2日目のレッスンも楽しかった。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

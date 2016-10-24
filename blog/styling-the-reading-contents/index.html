@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>何が読みやすく、何が邪魔になるのか - thleap.net</title>
+
+
+
+  <meta name="description" content="サイト全体のフォントに font-smoothing を適用して文字をスッキリさせたり、行同士の間隔を広げたりした。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">何が読みやすく、何が邪魔になるのか</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-06-10" class="metas-item">2015.06.10</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        
+
+<p>文章の読みやすさと文字の見せ方に気を配ってデザイン修正をほどこした、つもり。</p>
+
+<p>以下、一つずつ書き残しておく。</p>
+
+<figure>
+  <img src="/images/blog/styling-the-reading-contents/paragraph-spacing.png" alt="">
+  <figcaption>段落間の余白を文字サイズに対して 1.5倍空けるように変更</figcaption>
+</figure>
+
+<p>一つ目は段落同士の間隔。これまでよりも広く空けるようににし、行の区別をはっきりさせた。</p>
+
+<p>いつもブログを確認する時に行間と段落の分け目がわかりにくいと感じていたのでやってみたけど、これはわりと読みやすくなっただろうという気がしている。</p>
+
+<figure>
+  <img src="/images/blog/styling-the-reading-contents/font-smoothing.png" alt="">
+  <figcaption>フォントのアンチエイリアスを調整し、文字の濁りをやわらげる</figcaption>
+</figure>
+
+<p>二つ目は <code>font-smoothing</code> の適用。といっても、今のところ WebKit 系ブラウザと Firefox, Opera でしかこのプロパティは適用されない。</p>
+
+<p>最終的には <code>antialiased</code> を指定して文字の濁りを弱めるようにしたけど、アンチエイリアスはかかってたほうが見やすいのか見難いのか微妙だな。</p>
+
+<p>密度の高い漢字（「鷲」とか）は見やすくなるけど、元々かなり細いウエイトのフォントを使ってることもあって平仮名や漢数字などはなんとも言えない。このサイトの文字と背景のコントラストは高い方なので見えなくなることはないだろうけど、一段落の中に長い文章を書いたりすると見えづらいという事はあるかもしれないな。</p>
+
+<p>しばらくアンチエイリアスをかけた状態で様子をみよう。</p>
+
+<h2 id="他:b62332edf8bfe797163faacf6ac64cc3">他</h2>
+
+<p>文字色の赤は派手すぎだと感じたので強調箇所（ <code>strong</code> ）のスタイルを変更した。散々迷った末、<strong>マーカーみたいなスタイル</strong>に落ち着いた。</p>
+
+<p>普段は太字にして終わりなんだけど、このサイトではそれが色々としにくい状況になっていて、<code>em</code> とか <code>marker</code>、リンクのスタイルにかぶらない形（完全には）で装飾するのが難しかった。2日くらい悩んで、一旦これで落ち着いたという感じ。</p>
+
+<p>あと、 TOP のタイトルと More Posts についてるぴょこぴょこした線のスタイルも変えたけど、まぁこれはそんなに。長すぎる線がサイトの雰囲気に合ってないように感じたからなんだけど、それ以外の大きな理由が無い。前はコンテンツの始まりと終わりに線を敷くようにしていたので、理由が説明できる分そっちのが良かったかも。（しかしどこを始まりとして終わりにするかは&hellip; mogmog &hellip; ）</p>
+
+<p>そういえば、文字のそばに置かれる線の色を文字色の黒よりもちょっと明るくしたりとか、そういうこともした。管理が面倒そうな気もしてるんだけど、線が近すぎるのかフォントが細すぎるのか、文字よりも 1px の線が目立ってしまっていたような気がしたから。（ちなみにフォントにアンチエイリアスをかける前から気になってたこと）</p>
+
+<hr />
+
+<p>画像二枚のフォントが違うけど、これはローカル環境だとヒラギノ明朝が適用されて、本番（thleap.net）だと TypeSquare で登録しているリュウミン R-KL が適用されるから。そらそうなんだけど完全に忘れてた。</p>
+
+<p>「なんでスクリーンショットのフォントを合わせた状態で載せないんだ！」って言われそうだけど、ちょっともう一度スクショ撮るのが面倒なのでこのまま。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/books-always-beside-me/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/font-bold-by-text-shadow/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

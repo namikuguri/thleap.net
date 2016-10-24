@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>Params の有無による条件分岐 - thleap.net</title>
+
+
+
+  <meta name="description" content="特定のコンテンツだけが持つデータを使って要素の出し分けをする。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">Params の有無による条件分岐</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-05-18" class="metas-item">2015.05.18</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        <p>本題の前に、<a href="/blog/girl-with-book/">一つ前</a>の最後で言ってたやつ、文章と画像を左右に並べるための CSS を直すのはやめた。これを直す上手い方法が思いつかないってのと、縦長の画像を載せることがそんなに頻繁じゃ無いだろうと思ったから。</p>
+
+<p>とりあえずこの横並べクラスを使うときは、これらの下に水平線（ <code>hr</code> ）を引くか画像の長さ以上の文章を書くかしよう。縦長画像を載せまくるようであればまた考えるけど、そうでなければ放置。問題は認識した。</p>
+
+<hr />
+
+<p>そして、ここからが本題（短いけど）。これとは別のところでさっき直したところがある。</p>
+
+<p>それが<a href="https://github.com/thleap/thleap.net/commit/25861d5fa4c30a4842298f6ec35ef5a03a8e14e8">この部分</a>で、不必要なところで <code>.l-partition-sub</code> を生成してしまっていたからそれをしないようにした。</p>
+
+<pre><code>{{ if .Params.work_url }}
+  &lt;div class=&quot;l-partition-sub&quot;&gt;
+    &lt;p class=&quot;work-description&quot;&gt;{{ .Params.work_description }}&lt;/p&gt;
+    &lt;dl class=&quot;work-url&quot;&gt;
+      &lt;dt&gt;URL&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;a href=&quot;{{ .Params.work_url }}&quot;&gt;{{ .Params.work_url }}&lt;/a&gt;
+      &lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/div&gt;
+{{ else if .Params.work_description }}
+  &lt;div class=&quot;l-partition-sub&quot;&gt;
+    &lt;p class=&quot;work-description&quot;&gt;{{ .Params.work_description }}&lt;/p&gt;
+  &lt;/div&gt;
+{{ end }}
+</code></pre>
+
+<p>作品コンテンツだけが持ってるデータ（ <code>.Params.work_description</code>, <code>.Params.work_url</code> ）の有無で他の詳細ページとの出し訳をして、作品詳細ページだけで <code>.l-patition-sub</code> を出すようにした。</p>
+
+<p>賢くできた感じはしないが、余計なものは削除できたので、うん、まぁ良いんじゃない。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/girl-with-book/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/to-simplify-post/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

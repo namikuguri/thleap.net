@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on thleap.net</title>
+    <link>http://thleap.net/blog/</link>
+    <description>Recent content in Blogs on thleap.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 24 Oct 2016 20:56:54 +0900</lastBuildDate>
+    <atom:link href="http://thleap.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dice 108</title>
+      <link>http://thleap.net/blog/dice108/</link>
+      <pubDate>Mon, 24 Oct 2016 20:56:54 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/dice108/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/dice108/image.png&#34; alt=&#34;描いたサイコロ&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/&#34;&gt;http://corocoro-dice.tumblr.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thleap/corocoro-dice&#34;&gt;https://github.com/thleap/corocoro-dice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;サイコロをつくった。&lt;br /&gt;
+1種類につき6パターン、それを100種類くらいつくったのだから、なかなかだろう。&lt;/p&gt;
+
+&lt;p&gt;しかし、「はたしてこいつはサイコロか？」と思うようなものも少なからずあり（少なからず、だ）、最後には自分が何をつくっているのかわからなくなった。いつものことだ。&lt;/p&gt;
+
+&lt;p&gt;さて、こんな様子じゃまただらだらたらたら文章を続けてしまうだけだから、「具体的に」いこうじゃないか。そうなれば、まず自分が気に入ったサイコロからあげようじゃないか。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/151936215404&#34;&gt;http://corocoro-dice.tumblr.com/post/151936215404&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152117095734&#34;&gt;http://corocoro-dice.tumblr.com/post/152117095734&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152148261479&#34;&gt;http://corocoro-dice.tumblr.com/post/152148261479&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;シンプルなのがいいんじゃない。余計なものが入り込んでなくて、レイアウトがサイコロらしくて、マスの数も大きい。すぐにサイコロとわかるのがやっぱりいい。&lt;/p&gt;
+
+&lt;p&gt;それじゃあつぎはワースト3。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152148231849&#34;&gt;http://corocoro-dice.tumblr.com/post/152148231849&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152119094159&#34;&gt;http://corocoro-dice.tumblr.com/post/152119094159&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://corocoro-dice.tumblr.com/post/152197188739&#34;&gt;http://corocoro-dice.tumblr.com/post/152197188739&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;1みたいなやつは他にも何種類かあるが、これはサイコロとしては最悪。パッと見でマスの数がわからないのはダメ。ゲームとか、実際の利用シーンを思い浮かべてみるとわかる。2や3の模様に関しても同じような感想。ダメ。&lt;/p&gt;
+
+&lt;p&gt;ずいぶん具体的に振り返りができた。&lt;br /&gt;
+つぎは 7日間で 100個の模様描くのつらいって話でも。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>thleap.net v2.1 のアイデア 2日目</title>
+      <link>http://thleap.net/blog/thleap-net-v2-1-idea02/</link>
+      <pubDate>Mon, 04 Jul 2016 04:01:36 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/thleap-net-v2-1-idea02/</guid>
+      <description>
+
+&lt;p&gt;全体的に「キモいレイアウト」を狙ってる。表現がよくないかもしれないけど、他の Web サイトでは見ないようなレイアウト、という意味だ。これをこのサイトの個性にしたい。&lt;/p&gt;
+
+&lt;p&gt;また、デザインのムードとして、このサイトではクラシックな雰囲気と大胆さをを狙いにいってる。&lt;/p&gt;
+
+&lt;h2 id=&#34;ブログページ:435d8afb1d609ae52128383186e76aa6&#34;&gt;ブログページ&lt;/h2&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/blog.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;ブログ一覧ページ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;一覧ページには、カテゴリーとシリーズで絞り込むナビゲーションをつけた。「カテゴリーが Design、シリーズが hogehoge」みたいな感じで、2つの条件が重なった場合のことを考えるとすこし面倒そうだが。&lt;/p&gt;
+
+&lt;p&gt;ブログ一覧ページには、そのカテゴリーのすべての記事を載せる予定だ。（ページネーションを用意しない）&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/blog-article.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;ブログ記事ページ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;詳細ページは中央揃えで配置するようにした。左右どちらかに配置するのと比べて、画像の配置とか、いろいろ自由度が高そうだから。&lt;/p&gt;
+
+&lt;h2 id=&#34;作品ページ:435d8afb1d609ae52128383186e76aa6&#34;&gt;作品ページ&lt;/h2&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/sketch.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;作品一覧ページ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;作品を単調に並べて落ち着いた雰囲気にしたくなかったのでこのような形に。また、作品によって最適な向きやサイズも異なるので、できるだけ自由度の高いレイアウトにしようと考えている。&lt;/p&gt;
+
+&lt;p&gt;作品の絞り込みには製作時期を使うことにした。単純だけど、作品ページは成長の記録として残したかったので、これに一番合う絞り込みをつけた。&lt;/p&gt;
+
+&lt;p&gt;年代別のページには、その年のすべての作品を載せる予定だ。（ページネーションを用意しない）&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/sketch-article.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;作品記事ページ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;一枚絵などに使うレイアウト。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/sketch-article-pj--x-rect.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;作品記事ページ、プロジェクトなどで関連した画像が複数ある場合、かつ横長の画像が多い場合&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea02/sketch-article-pj--y-rect.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;作品記事ページ、プロジェクトなどで関連した画像が複数ある場合、かつ縦長の画像が多い場合&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;プロジェクトなどになると、作品を複数載せるページも出てくる。そういった場合に、単調に画像を建てに並べていくだけではおもしろさがなく、作品ページを訪れた人は最後まで見る気になれないかもしれない。&lt;/p&gt;
+
+&lt;p&gt;複雑なレイアウトになるので Markdown 記法だけでなく HTML を使うことになるだろう。プロジェクトの作品ページはいくつかパターンをつくって、がんばってレイアウトを組む予定。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>thleap.net v2.1 のアイデア</title>
+      <link>http://thleap.net/blog/thleap-net-v2-1-idea/</link>
+      <pubDate>Sun, 03 Jul 2016 04:18:19 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/thleap-net-v2-1-idea/</guid>
+      <description>&lt;p&gt;トップページのデザインだけ作った。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea/home.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;トップページのデザイン&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;http://thleap.net/images/blog/thleap-net-v2-1-idea/shot.png&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;より現実感をもたせるために、ブラウザの枠にデザインをはめたイメージ&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;ノリで始めたわりには結構いいとこまできた。&lt;/p&gt;
+
+&lt;p&gt;このページや他のページでやりたいこともいくつか出てきたので、箇条書きにしてまとめとく。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Work から Sketch に
+
+&lt;ul&gt;
+&lt;li&gt;30分くらいで作ったようなカジュアルな作品もサイトに載せたいので、メニュー名を変更したい&lt;/li&gt;
+&lt;li&gt;上記のように Sketch に変更すると更新頻度も上がるので、もう少し見られる位置におきたい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;画面幅いっぱいのデザイン
+
+&lt;ul&gt;
+&lt;li&gt;ブログと作品、両方が見てもらえるようにする（いま作品が目につきにくい）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;リンクエリアの拡大
+
+&lt;ul&gt;
+&lt;li&gt;スマホとかでもリンクをタップしやすいように&lt;/li&gt;
+&lt;li&gt;カーソル移動が少なくて済むように&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;キャッチコピーの撤去
+
+&lt;ul&gt;
+&lt;li&gt;ブログでキャッチコピー、気恥ずかしさがある&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;名前ではなくアカウント名に変更
+
+&lt;ul&gt;
+&lt;li&gt;気恥ずかしさがある&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;あとは希望。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;シリーズの追加
+
+&lt;ul&gt;
+&lt;li&gt;とくに読書感想文系の内容は複数記事になることが多いから、カテゴリーとは別にシリーズほしいなって&lt;/li&gt;
+&lt;li&gt;いま変に Hugo のカテゴリーとシリーズ使ってるので、それもあって&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;AMP 対応
+
+&lt;ul&gt;
+&lt;li&gt;ページ読み込み速度がいい感じなりそうなので、対応してみたい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;記事モジュールの拡充
+
+&lt;ul&gt;
+&lt;li&gt;いまあるモジュールの見た目も変えたいし、まだないモジュールも作りたい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;まぁこんなとこかな。&lt;/p&gt;
+
+&lt;p&gt;ブログや作品の一覧ページもできてないし、記事の詳細ページも手つかずの状態で夢だけが膨らむ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>デザイン記事へのコメント 20160630</title>
+      <link>http://thleap.net/blog/20160630/</link>
+      <pubDate>Fri, 01 Jul 2016 00:09:50 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/20160630/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://threem-design.com/web-design/synthesis2/&#34;&gt;フォトショップ初心者でもできる！プロ並みの画像合成で自然になじませる方法を解説。 | スリームデザイン&lt;/a&gt;&lt;br /&gt;
+写真の合成ってこうやるんだ、へー。複数の写真の合成っていろいろやることあるのね。描画モードをオーバーレイにするとなじむけど彩度が高すぎる、だから色調調整で彩度を落とす、っていうはなるほどなって思った。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.webcreativepark.net/2016/06/29-231739.html&#34;&gt;Re : Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い！ - to-R&lt;/a&gt;&lt;br /&gt;
+昨日発見した&lt;a href=&#34;http://www.cherrypieweb.com/weblog/technical/20160629025615.php&#34;&gt;遊ゴシックの記事&lt;/a&gt;に対する記事。Windows の遊ゴシックの標準ウエイトは Light じゃなくて Regular、その他もろもろ問題のある箇所が指摘されてる。記事に書いてあることを全部鵜呑みにしてはイカンねと思ったけど、両者の記事に対する検証はなにもしてない。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blogs.adobe.com/creativestation/web-201606update-illustrator-photoshop&#34;&gt;【2016年6月のアプデ内容を検証！】ついにAiに「アセット書き出し」機能が搭載！ Psはフォント周りの機能がブラッシュアップ | Adobe Creative Station&lt;/a&gt;&lt;br /&gt;
+Illustrator で Web デザイン作るっていうニーズは、こうやって新機能で制作をサポートするくらいにはあるのかな。個人的には Illustrator と Photoshop にはもうこれ以上機能を盛り込んでほしくないと思うんだけど。機能が多すぎていちいちどのメニューに内包されてたか覚えてないし、最近メニューバーのヘルプ検索使ってメニューにアクセスしてるし&amp;hellip; 。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://creator.dwango.co.jp/7700.html&#34;&gt;アプリデザインの7ステップ | dwango creators&amp;rsquo; blog（ドワンゴクリエイターズブログ）&lt;/a&gt;&lt;br /&gt;
+今日読んだ記事で一番良かった。デザイナーとしてプロジェクトに入って、どういった役割を担って何をアウトプットするか、順を追って説明されていてわかりやすかった。記事の文章はわかりやすく、言葉もキャッチーに感じるものが多かったので、しばらく記憶に残ってそう。&lt;/p&gt;
+
+&lt;p&gt;ガガガッと書いて、とくに見直さずに寝る。&lt;/p&gt;
+
+&lt;p&gt;文章は滅茶苦茶かもしれないが、このへんの整理は未来の俺がやってくれるはず。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>デザイン記事へのコメント 20160629</title>
+      <link>http://thleap.net/blog/20160629/</link>
+      <pubDate>Thu, 30 Jun 2016 02:23:54 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/20160629/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://yakst.com/ja/posts/3985&#34;&gt;なぜAtomはVimを置き換えられないのか - Yakst&lt;/a&gt;&lt;br /&gt;
+Vim のコンポーザビリティーの力っていうのを初めて聴いたわ。&amp;rdquo;d コマンドは、動作に関するコマンドと一緒に組み合わせます。&amp;rdquo; って感じで、組み合わせによって力を発揮エディターなんだな。（まぁまぁ長く使ってるのに理解してない）&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://konifar-zatsu.hatenadiary.jp/entry/2016/06/29/193911&#34;&gt;無駄な議論を減らすために使ってる言葉 - Konifar&amp;rsquo;s ZATSU&lt;/a&gt;&lt;br /&gt;
+「必要な人だけに絞って会議やりません？」みたいなのはよく聞く。日常的に遭遇する出来事なので、言葉のバリエーション用意しておくと便利そう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cherrypieweb.com/weblog/technical/20160629025615.php&#34;&gt;Windowsで游ゴシックが汚いのは、どう考えてもWebデザイナーが悪い？ - Cherry Pie Web&lt;/a&gt;&lt;br /&gt;
+遊ゴシック使うときは font-weight: 500 、覚えておこう。Windows と Mac で表示違うっていうの今日はじめて知ったけど。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://anond.hatelabo.jp/20160629082647&#34;&gt;ソフトウェアエンジニアが転職するときに気をつけること - はてな匿名ダイアリー&lt;/a&gt;&lt;br /&gt;
+外の会社のことを知る方法が書いてあって、コンパクトに必要なことがまとめられてると思った。自分や周りにに問いかけて、自分の会社の姿を映してみるのもおもしろいかも。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://greatappstimeline.xyz/&#34;&gt;Great Apps Timeline&lt;/a&gt;&lt;br /&gt;
+過去と比べると、SoundCloud は曲を録れるし聴けるアプリから、曲を聴くことにフォーカスしたアプリに変わったよね（録音機能がすごく奥のほうに隠された）。iOS だけのスクリーンショットだし、サイトの読み込みが遅いから次に開くことは無さそうなサイトだけどおもしろかった。&lt;/p&gt;
+
+&lt;p&gt;このタイプの記事を何回くらい続けるか、自分でもまったく想像できてない。&lt;/p&gt;
+
+&lt;p&gt;あんまり続けたい記事内容ではないけど、楽なのでとりあえずブログ書くっていうのには良いんだよな。&lt;/p&gt;
+
+&lt;p&gt;あと昨日タブキーが使えなくなったことに気付いたけど、今日また新しく使えなくなってるキーを見つけた。なんて呼ぶか知らんけど、Markdown でコードを囲むときのアレ。はー&amp;hellip; 。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>デザイン記事へのコメント 20160628</title>
+      <link>http://thleap.net/blog/20160628/</link>
+      <pubDate>Wed, 29 Jun 2016 02:19:14 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/20160628/</guid>
+      <description>&lt;p&gt;誕生日プレゼントにフォントを欲しがる先輩&lt;br /&gt;
+&lt;a href=&#34;http://anond.hatelabo.jp/20160628131933&#34;&gt;http://anond.hatelabo.jp/20160628131933&lt;/a&gt;&lt;br /&gt;
+ありそうな話じゃん、って思った。&lt;/p&gt;
+
+&lt;p&gt;DeSs第〇.七回「運動」中村勇吾　メインタグ〈プログラム〉に行ってきた話&lt;br /&gt;
+&lt;a href=&#34;http://www.cbc-net.com/blog/sln/2016/06/27/dess-yugonakamura/&#34;&gt;http://www.cbc-net.com/blog/sln/2016/06/27/dess-yugonakamura/&lt;/a&gt;&lt;br /&gt;
+川の話ぶっちゃけわかんなかったけど、いつかわかるように成りたいって気持ち。&lt;/p&gt;
+
+&lt;p&gt;配色がうまくいく、デザイナーが覚えておきたい7つの鉄板ステップ&lt;br /&gt;
+&lt;a href=&#34;http://photoshopvip.net/91446&#34;&gt;http://photoshopvip.net/91446&lt;/a&gt;&lt;br /&gt;
+グローバル化を意識した時に、色の問題って一気に難しくなりそう。&lt;/p&gt;
+
+&lt;p&gt;Adobe XDのリピートグリッドをもっと便利に扱う方法&lt;br /&gt;
+&lt;a href=&#34;http://uxmilk.jp/40397&#34;&gt;http://uxmilk.jp/40397&lt;/a&gt;&lt;br /&gt;
+リピートグリッドは使わないと全貌がわからないけど、Adobe XD おもしろそう。&lt;/p&gt;
+
+&lt;p&gt;ひさしぶりに自宅の MBP 開いたら Tab が反応しなくなっててすごくがっかりしてる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>服を減らす</title>
+      <link>http://thleap.net/blog/reduce-clothes/</link>
+      <pubDate>Sat, 21 May 2016 10:18:31 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/reduce-clothes/</guid>
+      <description>
+
+&lt;p&gt;約2年間ほど、服を減らす努力をしている。そしてここ最初、ある程度満足の行く服の数になってきた。&lt;/p&gt;
+
+&lt;p&gt;現在は、下着をのぞいて次のような状態だ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;冬物アウター &amp;hellip; 3&lt;/li&gt;
+&lt;li&gt;長袖シャツ &amp;hellip; 3&lt;/li&gt;
+&lt;li&gt;半袖シャツ &amp;hellip; 3&lt;/li&gt;
+&lt;li&gt;パーカー・ニット &amp;hellip; 3&lt;/li&gt;
+&lt;li&gt;長ズボン &amp;hellip; 3&lt;/li&gt;
+&lt;li&gt;半ズボン &amp;hellip; 4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;「なぜ捨てないの？」と言われ続けていたシャツはもうない。はじめ10着近くあった冬物のアウターもいまは3着になっている。&lt;/p&gt;
+
+&lt;p&gt;自分にとって見た目や着心地が好きなものだけが残り、シーズンになると絶対に着るものだけが残っている。クローゼットの中は以前よりすっきりして、部屋の中からは脱ぎっぱなしの服が姿を消した。&lt;/p&gt;
+
+&lt;p&gt;今年の春先に冬物を大量に処分したので、冬が来たときに今の服だけで寒さを乗り切れるか未知数だが、去年あまり着てない服を捨てたのでおそらく大丈夫だろう。&lt;/p&gt;
+
+&lt;p&gt;服が減ると、服を選ぶ時間も減る。もともと朝の支度には時間のかからないほうだが、それでも朝目の前の服を手に取れば良いという状態は、ストレスや時間の減少につながっていると思う。&lt;/p&gt;
+
+&lt;p&gt;「その日の気分にできるだけ合った服を着たいからバリエーションが必要」という人でなければ、服はそんなにいらないかもしれない。&lt;/p&gt;
+
+&lt;h1 id=&#34;ふと本棚をみた:aa221a124c687362128722d9bef3a9a6&#34;&gt;ふと本棚をみた&lt;/h1&gt;
+
+&lt;p&gt;家の本棚には綺麗に書籍が並んでいた。&lt;/p&gt;
+
+&lt;p&gt;僕は漫画をネットカフェで読み、小説をKindleで読むタイプだ。本棚に並べているのはそれ以外、つまり技術書やデザイン本だ。&lt;/p&gt;
+
+&lt;p&gt;家にある書籍で、読み切ったといえる本はどのくらいあるだろうか。積読している本は、何冊あるだろうか。&lt;/p&gt;
+
+&lt;p&gt;頭が痛くなってきた。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>色つきお絵かき</title>
+      <link>http://thleap.net/blog/coloring-sketch/</link>
+      <pubDate>Tue, 17 May 2016 02:00:46 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/coloring-sketch/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/coloring-sketch/image.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;またコツコツ描きはじめた。&lt;/p&gt;
+
+&lt;p&gt;前回は付箋に、今回はポストカードに。&lt;br /&gt;
+前回は黒一色で、今回は色つきで。&lt;/p&gt;
+
+&lt;p&gt;楽しいじゃない。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>永</title>
+      <link>http://thleap.net/blog/moji-ei/</link>
+      <pubDate>Sat, 26 Mar 2016 19:50:46 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/moji-ei/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/moji-ei/image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;「&lt;a href=&#34;http://goo.gl/aeGEIw&#34;&gt;もじ部&lt;/a&gt;」って本を読んでる。書体の制作話をデザイナー自身にインタビューしていく本。おもしろい。&lt;/p&gt;
+
+&lt;p&gt;まだ読み始めたばかりで 30ページくらいしか読めてないけど、制作の話を聞いてたら自分でも何か作ってみたくなったので、とりあえずそばにあったノートを手にとって一文字書いた。それがこのブログ記事の最初に載せているイメージ。&lt;/p&gt;
+
+&lt;p&gt;書く文字は何でも良かったんだけど、書の世界には「永字八法」という言葉があるらしく、&amp;rdquo;永&amp;rdquo; という字には筆使いの基本的な要素がつめ込まれてるようなのでこの文字に。詳しくは&lt;a href=&#34;http://www.akibatec.net/wabunfont/study/basic/basic.html&#34;&gt;和文フォント大図鑑&lt;/a&gt;さんのページを見れば良いと思う。&lt;/p&gt;
+
+&lt;p&gt;この本と、あと一冊別の書体の本を読んだら、もうちょっと大きな何かを作りたい（気持ち）。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;4月中にすっきりすべてのことを終わらすのは無理そう。&lt;/p&gt;
+
+&lt;p&gt;これからもいろいろ汗水鼻水たらしつつ、のんびりやろうと決めた。&lt;/p&gt;
+
+&lt;p&gt;あとこういう「がんばろう」みたいなのを書くのも面倒くさいから、ちょっと控える。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>小説 - 秒速5センチメートル</title>
+      <link>http://thleap.net/blog/5cm-per-second-book/</link>
+      <pubDate>Fri, 18 Mar 2016 01:55:27 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/5cm-per-second-book/</guid>
+      <description>&lt;p&gt;アニメは好きで何度か観ていたが、小説が発売されていたとは知らなかった。先週末、慌てて近くの本屋で買ってきた。&lt;/p&gt;
+
+&lt;p&gt;内容的に、第一章「桜花抄」、第二章「コスモナウト」はほとんどアニメと変わらないように思えた。ただ、第三章「秒速5センチメートル」は、遠野の大学時代や社会人になった後の生活が描かれており、これはアニメにはなかった部分も多かったと思う。&lt;/p&gt;
+
+&lt;p&gt;読み終えた時に「アニメが小説になった」というような印象はあまりなかったので、アニメと小説はそれぞれ別物と捉えて良いだろう。&lt;/p&gt;
+
+&lt;p&gt;小説は、当然だがすべてが文章で表現される。その結果、映像で縛りつけられない分、いくつかのものが自分の日常風景に置き換えることができ、ストーリーのリアリティが増した気がする。逆にあまりに極端な比喩は自分の脳内補完が追いつかず、どこかウソっぽい感じがした（とくに桜花抄）。&lt;/p&gt;
+
+&lt;p&gt;あと、アニメは映像の綺麗さや音楽にハッとさせられる瞬間も多かったが、小説はそういったことが少なかった。驚かせたいんだろうな、ここで読者の気持ちを惹きつけたいんだろうなというときの、作者の間合いの取り方が上手ではなかったように感じた。&lt;/p&gt;
+
+&lt;p&gt;今週末はアニメを観ようと思う。&lt;/p&gt;
+
+&lt;p&gt;また何か違う発見があるかもしれない。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>思いつきでリスタート</title>
+      <link>http://thleap.net/blog/casual-restart/</link>
+      <pubDate>Tue, 15 Mar 2016 23:23:28 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/casual-restart/</guid>
+      <description>&lt;p&gt;なかなかそううまくはいかないって。&lt;/p&gt;
+
+&lt;p&gt;そううまく続かないって。&lt;/p&gt;
+
+&lt;p&gt;ブログも &lt;a href=&#34;http://bilibili-calendar.tumblr.com/&#34;&gt;bilibili&lt;/a&gt; もついでにジョギングも、3月の一週目くらいまでは頑張ってた。でも、&amp;rdquo;なんとなく&amp;rdquo; 途中で途切れた。&lt;/p&gt;
+
+&lt;p&gt;別に仕事が忙しかったわけでもないし、気持ちが大きく沈んでやる気がでなかったわけでもない。本当になんとなく、考えたり、パソコンを開くのが面倒だったりしただけだ。&lt;/p&gt;
+
+&lt;p&gt;「よーし明日から頑張るぞ！」とか、何回繰り返したかわからない。ただ、今日から始めるにはしんどい。ぐだぐだぐだ&amp;hellip; 。&lt;/p&gt;
+
+&lt;p&gt;そろそろ日常系から脱出したい。この気持ちは強い。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;ああ、HUGO。書きながらタイトルを思いつくことが多いから、できれば URL （ファイル名）は本文を書いた後に決めたいな。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>広告、よーし</title>
+      <link>http://thleap.net/blog/ad-ok/</link>
+      <pubDate>Tue, 08 Mar 2016 23:27:05 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/ad-ok/</guid>
+      <description>&lt;p&gt;おそらく最近あたたかくなってきたからだろう。気持ちが浮かれてる。&lt;/p&gt;
+
+&lt;p&gt;朝、電車に乗ると紙に印刷された桜の花びらにうきうきする。その横にドーンッと置いてあるビールにのどがなる。キャッチコピーやその下に添えられた文章に、心がそわそわする。&lt;/p&gt;
+
+&lt;p&gt;ビールの広告以外にも、この時期は何かとキャンペーンが多い。「新しい生活」をどこのだれとも知らぬ人が応援してくれるのだ。&lt;/p&gt;
+
+&lt;p&gt;すべての広告が右斜め上に傾いていて、大きめの文字がどでかく載っている。&lt;/p&gt;
+
+&lt;p&gt;そんな錯覚を覚えながら、もうすこしで完全体になる春を、待ち遠しく思っている。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install modern.IE</title>
+      <link>http://thleap.net/blog/install-modern-ie/</link>
+      <pubDate>Tue, 08 Mar 2016 01:15:19 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/install-modern-ie/</guid>
+      <description>&lt;p&gt;modern.IE で IE10 の表示確認をした。&lt;/p&gt;
+
+&lt;p&gt;圧縮ファイルがうまく解凍できなかったので、&lt;a href=&#34;http://blog.fkoji.com/2015/08311755.html&#34;&gt;人のブログ&lt;/a&gt;を見てなるほど解決。&lt;br /&gt;
+ローカル環境で開発中の確認が仮想マシン上でしたかったので、これも&lt;a href=&#34;http://mn-memo.com/archives/931&#34;&gt;人のブログ&lt;/a&gt;を見て解決。&lt;/p&gt;
+
+&lt;p&gt;ねむい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Restart bilibili!!</title>
+      <link>http://thleap.net/blog/restart-bilibili/</link>
+      <pubDate>Sun, 06 Mar 2016 23:37:15 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/restart-bilibili/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/restart-bilibili/image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;このブログと似たようなもので、&lt;a href=&#34;http://bilibili-calendar.tumblr.com/&#34;&gt;日めくりカレンダー&lt;/a&gt;も去年の年末で更新が止まってた。12月31日で更新を止めたままでも良かったんだけど、もう少し頑張れそうだから続けてみよう。&lt;/p&gt;
+
+&lt;p&gt;とりあえず現在の日付に追いつくまで、約60日の日めくりカレンダーを作らないといけない。その日の分のカレンダーを作りつつ、溜め込んだカレンダーを作るのはしんどそうだな&amp;hellip; 。はひー。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>放心転換</title>
+      <link>http://thleap.net/blog/houshin-tenkan/</link>
+      <pubDate>Sat, 05 Mar 2016 17:29:13 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/houshin-tenkan/</guid>
+      <description>&lt;p&gt;2月末までは少し動きづらい状態が続いたけど、最近になっていろいろと落ち着いてきた。&lt;/p&gt;
+
+&lt;p&gt;3月に入った直後はなんだか気が抜けて、何も手がつかない状態だったんだけど、いまはようやく「次、さぁやるぞ！」っていう気持ちだ。&lt;/p&gt;
+
+&lt;p&gt;で、「何をするの？」って話なんだけど、まずはブログを更新する頻度や &lt;a href=&#34;http://bilibili-calendar.tumblr.com/&#34;&gt;bilibili-calender&lt;/a&gt; を更新する頻度を元に戻したい。1ヶ月くらいで調子を取り戻すと思ってるので、4月からは新しいことにチャレンジしたい。&lt;/p&gt;
+
+&lt;p&gt;たとえば、外で LT をしてみたり、コミュニティ活動にもっと力をいれてみたり、Webサイトを作ってみたり、これまで触ったことのない技術に手を出してみたり、やりたいことはたくさんある。&lt;/p&gt;
+
+&lt;p&gt;よーし、明日もがんばろう。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

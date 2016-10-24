@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>OPEN THE DOOR - thleap.net</title>
+
+
+
+  <meta name="description" content="CSS でドアを開くようなアニメーション。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">OPEN THE DOOR</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-05-24" class="metas-item">2015.05.24</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        <iframe width="100%" height="300" src="//jsfiddle.net/thleap/66wkzn6a/2/embedded/result%2Ccss/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>ドアが開く（ような）アニメーションを CSS で作ろうと奮闘。</p>
+
+<p>後ろから前に来てるのか、前から後ろに行ってるのかよくわからない感じに。アニメーション中盤、文字が前から後ろに倒れていく感じが少しだけはっきりしてくる。</p>
+
+<p>これでも<a href="http://jsfiddle.net/thleap/66wkzn6a/">一番初めに作ったもの</a>よりは大分マシで、少し &ldquo;らしく&rdquo; なったのは <code>translateX(-.5em)</code> で変形させる文字を左に寄せて、<code>perspective(120px)</code> で手前から奥行きを出しているから。</p>
+
+<p>ただ、この奥行きというやつが僕はあまりわかってなくて、雰囲気で数値を指定してるのがこのように微妙な結果を生んだ原因かと思う。</p>
+
+<hr />
+
+<p>作りたかったものに合わせて後から適当にタイトルつけたけど、ドアを閉じてるようにも見えるし、そもそもドアに見えないし、変な感じ。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/ocean-waves-anime/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/git-stash-untrack-file/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

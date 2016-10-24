@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev on thleap.net</title>
+    <link>http://thleap.net/tags/dev/</link>
+    <description>Recent content in Dev on thleap.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 08 Mar 2016 23:27:05 +0900</lastBuildDate>
+    <atom:link href="http://thleap.net/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>広告、よーし</title>
+      <link>http://thleap.net/blog/ad-ok/</link>
+      <pubDate>Tue, 08 Mar 2016 23:27:05 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/ad-ok/</guid>
+      <description>&lt;p&gt;おそらく最近あたたかくなってきたからだろう。気持ちが浮かれてる。&lt;/p&gt;
+
+&lt;p&gt;朝、電車に乗ると紙に印刷された桜の花びらにうきうきする。その横にドーンッと置いてあるビールにのどがなる。キャッチコピーやその下に添えられた文章に、心がそわそわする。&lt;/p&gt;
+
+&lt;p&gt;ビールの広告以外にも、この時期は何かとキャンペーンが多い。「新しい生活」をどこのだれとも知らぬ人が応援してくれるのだ。&lt;/p&gt;
+
+&lt;p&gt;すべての広告が右斜め上に傾いていて、大きめの文字がどでかく載っている。&lt;/p&gt;
+
+&lt;p&gt;そんな錯覚を覚えながら、もうすこしで完全体になる春を、待ち遠しく思っている。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install modern.IE</title>
+      <link>http://thleap.net/blog/install-modern-ie/</link>
+      <pubDate>Tue, 08 Mar 2016 01:15:19 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/install-modern-ie/</guid>
+      <description>&lt;p&gt;modern.IE で IE10 の表示確認をした。&lt;/p&gt;
+
+&lt;p&gt;圧縮ファイルがうまく解凍できなかったので、&lt;a href=&#34;http://blog.fkoji.com/2015/08311755.html&#34;&gt;人のブログ&lt;/a&gt;を見てなるほど解決。&lt;br /&gt;
+ローカル環境で開発中の確認が仮想マシン上でしたかったので、これも&lt;a href=&#34;http://mn-memo.com/archives/931&#34;&gt;人のブログ&lt;/a&gt;を見て解決。&lt;/p&gt;
+
+&lt;p&gt;ねむい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>テーブルにおける列のあつかい</title>
+      <link>http://thleap.net/blog/css-table-col/</link>
+      <pubDate>Wed, 09 Dec 2015 23:50:35 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/css-table-col/</guid>
+      <description>
+
+&lt;p&gt;今日は「&lt;a href=&#34;http://qiita.com/advent-calendar/2015/html5&#34;&gt;HTML5 Advent Calendar 2015&lt;/a&gt;」9日目。明日は @tanikawa さん。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;今回は CSS のお話。&lt;/p&gt;
+
+&lt;p&gt;もう一ヶ月も前になるが、&lt;a href=&#34;http://tokyo-css-module-specs.connpass.com/&#34;&gt;W3C CSS Module 仕様書もくもく会@東京&lt;/a&gt;という勉強会に参加した。そのときに、&lt;a href=&#34;http://momdo.github.io/css2/tables.html&#34;&gt;CSS 2.2 テーブルの章&lt;/a&gt;を読んで（聴いて？）テーブルの列の存在を知ったので、そのあたりを少し振り返ろうと思う。&lt;/p&gt;
+
+&lt;p&gt;まず、僕は CSS で &lt;code&gt;display: table-column&lt;/code&gt; を使ったこともなければ、HTML で &lt;code&gt;colgroup&lt;/code&gt; や &lt;code&gt;col&lt;/code&gt; 要素を使ったこともなかった。たまたま機会が無かっただけだが、その&lt;a href=&#34;http://www.w3schools.com/tags/tag_col.asp&#34;&gt;指定の方法&lt;/a&gt;は使い方を知ったいまでも少し不思議な感じがしている。&lt;/p&gt;
+
+&lt;p&gt;そんな感じで日本語に訳された仕様書に目を通したわけだが、基本的にテーブルの各セルは行の子孫としてあつかわれるようんだ。じゃあ列はどういうあつかいになるかというと、次のプロパティは列によって操作することが出来る。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;border&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;background&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;width&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;visibility&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;background&lt;/code&gt; に関しては次のように書いてある。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;背景プロパティーは列内のセルの背景を設定するが、セルと行の両方が透明な背景を持つ場合に限る。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これがどういうことかというと&amp;hellip; 、こんな感じ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;列のみに背景色を指定（tan, lime）: &lt;a href=&#34;http://jsfiddle.net/thleap/p5af5Ls5/18/&#34;&gt;http://jsfiddle.net/thleap/p5af5Ls5/18/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;行と列に背景色を指定（yellow）: &lt;a href=&#34;http://jsfiddle.net/thleap/p5af5Ls5/17/&#34;&gt;http://jsfiddle.net/thleap/p5af5Ls5/17/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;width&lt;/code&gt; プロパティでは列の最小幅を決めることができるが、これは普段の制作でもよく使われる気がする。&lt;/p&gt;
+
+&lt;p&gt;あ、と、これ以上書くことが無くて困ってしまったので、このあたりで。（テーブルの列、いつ使うんだろう）&lt;/p&gt;
+
+&lt;h2 id=&#34;おまけ:207ab35ca588ffc37b748dc07f92b09b&#34;&gt;おまけ&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;caption-side&lt;/code&gt; プロパティも知らなかった。ただ、知っていても HTML を編集すれば良いんじゃないかという感じで、やっぱりどこで使えば良いか思いつかない。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;指定なし: &lt;a href=&#34;http://jsfiddle.net/thleap/nwnya6r7/4/&#34;&gt;http://jsfiddle.net/thleap/nwnya6r7/4/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;caption-side: bottom&lt;/code&gt;: &lt;a href=&#34;http://jsfiddle.net/thleap/nwnya6r7/3/&#34;&gt;http://jsfiddle.net/thleap/nwnya6r7/3/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;列やキャプションの配置以外にも、テーブル関連の仕様は知らないことが多かったけど、それを知ったところで次にどうつなげて良いのかわからずにいる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upgrade HUGO v0.15</title>
+      <link>http://thleap.net/blog/upgrade-hugo-v015/</link>
+      <pubDate>Thu, 03 Dec 2015 04:26:34 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/upgrade-hugo-v015/</guid>
+      <description>&lt;p&gt;v0.15 にした。&lt;code&gt;brew upgrade hugo&lt;/code&gt; を実行しても v0.14 までしかインストールされなかったので一瞬悩んだ。少し調べた結果、&lt;code&gt;brew update&lt;/code&gt; を忘れていた（ &lt;a href=&#34;https://github.com/spf13/hugo/issues/1633&#34;&gt;https://github.com/spf13/hugo/issues/1633&lt;/a&gt; ）。&lt;/p&gt;
+
+&lt;p&gt;アップデートの内容は、他の静的サイトジェネレーターからのインポートが簡単にできるようになったとか、さらに早くなったとか、いろいろトピックスはあるみたいだけど、個人的にはバグフィックスで &lt;code&gt;page.HasMenuCurrent()&lt;/code&gt; と &lt;code&gt;node.HasMenuCurrent()&lt;/code&gt; が修正されたのが嬉しかったりする。期待していた修正かどうかはこれからチェックしてみないとわからないけど。&lt;/p&gt;
+
+&lt;p&gt;あと、&lt;code&gt;.Url&lt;/code&gt; じゃなくて &lt;code&gt;.URL&lt;/code&gt; 使えみたいなことを v0.13 のときから言われてたんだけど、それを今まで無視して v0.15 にアップデートしたらこれでもかというくらい怒られた。エラーが大量に出た。&lt;/p&gt;
+
+&lt;p&gt;こんな感じで:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ERROR: 2015/12/03 template: partials/meta.html:3:9: executing &amp;quot;partials/meta.html&amp;quot; at &amp;lt;.Url&amp;gt;: Url is not a field of struct type *hugolib.Node in partials/meta.html
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;git gsub \.Url \.URL&lt;/code&gt; で置換を行ったらエラーは消えた。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>wercker で再びビルドが成功するまで</title>
+      <link>http://thleap.net/blog/recovering-wercker/</link>
+      <pubDate>Thu, 03 Dec 2015 02:02:16 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/recovering-wercker/</guid>
+      <description>
+
+&lt;h2 id=&#34;怒られ-ビルドに失敗する:5b55f15685974019d95eef5e7ae53481&#34;&gt;怒られ、ビルドに失敗する&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;// arjen/hugo-build
+
+cd $WERCKER_SOURCE_DIR
+$ export WERCKER_STEP_ROOT=&amp;quot;/wercker/steps/arjen/hugo-build/1.8.0&amp;quot;
+$ export WERCKER_STEP_ID=&amp;quot;82c22bbe-a946-45d4-9a7d-cd743502e86e&amp;quot;
+$ export WERCKER_STEP_NAME=&amp;quot;hugo-build&amp;quot;
+$ export WERCKER_REPORT_NUMBERS_FILE=&amp;quot;$WERCKER_REPORT_DIR/$WERCKER_STEP_ID/numbers.ini&amp;quot;
+$ export WERCKER_REPORT_MESSAGE_FILE=&amp;quot;$WERCKER_REPORT_DIR/$WERCKER_STEP_ID/message.txt&amp;quot;
+$ export WERCKER_REPORT_ARTIFACTS_DIR=&amp;quot;$WERCKER_REPORT_DIR/$WERCKER_STEP_ID/artifacts&amp;quot;
+$ mkdir -p $WERCKER_REPORT_ARTIFACTS_DIR
+$ export WERCKER_STEP_TEMP=&amp;quot;/tmp/$WERCKER_STEP_ID&amp;quot;
+$ source &#39;/wercker/wercker-build-essentials/init.sh&#39;
+$ mkdir -p $WERCKER_STEP_TEMP
+$ export WERCKER_HUGO_BUILD_VERSION=&amp;quot;0.14&amp;quot;
+$ export WERCKER_HUGO_BUILD_DISABLE_PYGMENTS=&amp;quot;false&amp;quot;
+$ export WERCKER_HUGO_BUILD_FORCE_INSTALL=&amp;quot;false&amp;quot;
+$ export WERCKER_HUGO_BUILD_PROD_BRANCHES=&amp;quot;&amp;quot;
+$ export WERCKER_HUGO_BUILD_DEV_BRANCHES=&amp;quot;&amp;quot;
+$ export WERCKER_HUGO_BUILD_DEV_FLAGS=&amp;quot;&amp;quot;
+$ export WERCKER_HUGO_BUILD_FLAGS=&amp;quot;&amp;quot;
+$ export WERCKER_HUGO_BUILD_CONFIG=&amp;quot;&amp;quot;
+$ export WERCKER_HUGO_BUILD_THEME=&amp;quot;&amp;quot;
+$ source &amp;quot;$WERCKER_STEP_ROOT/run.sh&amp;quot;
+E: List directory /var/lib/apt/lists/partial is missing. - Acquire (13: Permission denied)
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ArjenSchwarz/wercker-step-hugo-build/issues/8&#34;&gt;Issue with wercker/default (HTTP 404) · Issue #8 · ArjenSchwarz/wercker-step-hugo-build&lt;/a&gt; を見ると、「バージョン番号を引用符でくくり、box は debian 使って」みたいに言ってるので、それに。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wercker.yml&lt;/code&gt; をこのようにした:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: &amp;quot;0.14&amp;quot;
+
+deploy:
+  steps:
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: thleap.net
+        basedir: _public
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;叱られる:5b55f15685974019d95eef5e7ae53481&#34;&gt;叱られる&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;Setting up environment...
+
+Using wercker.yml:
+box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: &amp;quot;0.14&amp;quot;
+deploy:
+  steps:
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: thleap.net
+        basedir: _public
+Setup environment failed:
+Box debian defined in wercker.yml not found
+
+Sentinel: production-sentinel-12
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://devcenter.wercker.com/docs/faq/migration-tips-v2.html&#34;&gt;wercker - docs - Migration Tips to wercker v2&lt;/a&gt; を参考に wercker のサイト内で設定を変えることに。&lt;/p&gt;
+
+&lt;p&gt;以下のメニューの設定リンクを選択。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/recovering-wercker/header-setting-link.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Infrastructure stack を変更（変更前はClassicになってた）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/recovering-wercker/infrastructure-stack-select.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これで以前のようにビルドに成功した。めでたし (?) 。&lt;/p&gt;
+
+&lt;h2 id=&#34;まだダメだった-デプロイに失敗:5b55f15685974019d95eef5e7ae53481&#34;&gt;まだダメだった（デプロイに失敗）&lt;/h2&gt;
+
+&lt;p&gt;フォーラムを見ているとまさに&lt;a href=&#34;https://discuss.gohugo.io/t/automated-hugo-deployments-anywhere-using-wercker/539/39&#34;&gt;同じようなエラー&lt;/a&gt;を出している人がいた。それに対して、次の人がコメントで &lt;code&gt;wercker.yml&lt;/code&gt; の &lt;code&gt;deploy: steps:&lt;/code&gt; の後に2行ほど足せば何とかなるでみたいなこと言ってるので、その通りに。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Done.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>仕様書を聴く 1.5時間</title>
+      <link>http://thleap.net/blog/tokyo-css-specs-vol3/</link>
+      <pubDate>Thu, 19 Nov 2015 23:44:07 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/tokyo-css-specs-vol3/</guid>
+      <description>&lt;p&gt;技術的な話は次の機会にして（できるかな？）、感想だけ先に書いておく。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://thleap.net/blog/tokyo-css-specs/&#34;&gt;前回&lt;/a&gt;に続き、第三回にも参加してきた。今回は &lt;a href=&#34;http://momdo.github.io/css2/tables.html&#34;&gt;CSS 2.2 テーブルの章&lt;/a&gt; だった。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://tokyo-css-module-specs.connpass.com/event/22639/&#34;&gt;第3回 W3C CSS Module 仕様書もくもく会@東京&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;当日の様子は &lt;a href=&#34;http://togetter.com/li/901908&#34;&gt;Toggeter&lt;/a&gt; にまとめられている。&lt;/p&gt;
+
+&lt;p&gt;前回とは勉強会の内容が少し変わっていて、今回の参加者は音読を聴きながら、読み手のペースに合わせて手元の仕様書を眺める形になっていた。&lt;/p&gt;
+
+&lt;p&gt;これには良い点、悪い点が両方あったように思う。&lt;/p&gt;
+
+&lt;p&gt;まず、良い点は勉強会の時間の中で確実に仕様書が読み進められること。会の終了まで別の作業に気を取られることもなく、全員&lt;a href=&#34;https://twitter.com/GeckoTang/status/666953818488328192&#34;&gt;ある程度&lt;/a&gt;まで読み進むことができる&amp;#12290;&lt;/p&gt;
+
+&lt;p&gt;それに、一章/一節ごとに質疑応答タイム（答えるのは参加者全員）をとって質問を募集するスタイルは良いと思った。自分がなんとなく流してしまったところを他の人が拾ってくれて、確認や質問をしてくれるのはありがたかった。&lt;/p&gt;
+
+&lt;p&gt;悪い点は一つで、良い点の逆説に聞こえるかもしれないが、自分の読み方/スピードで仕様書が読めないこと。&lt;/p&gt;
+
+&lt;p&gt;仕様書みたいに長くてまわりくどい表現をする文章は、他のドキュメントを参照しながら読む人も多いと思う。今回のように音読を聴きながら仕様書を読むというのは、この方法が取りにくいと思った。&lt;/p&gt;
+
+&lt;p&gt;結果、自分では十分に文章を解釈がすることができず、理解できない内容が多く残る形で会の終了時刻になってしまった。&lt;/p&gt;
+
+&lt;p&gt;ただ、本記事では &amp;ldquo;悪い点&amp;rdquo; としてあげたが、これは単純に僕が予習を怠ったせいで生じた問題かもしれない。みんな一度は読んできてる風だったし。&lt;/p&gt;
+
+&lt;p&gt;次からは、&lt;strong&gt;勉強会の前に自分で仕様書を一読しておく&lt;/strong&gt;必要があると思った。そこで&lt;strong&gt;理解した内容を他の人に共有し、確認するため、わからなかった点を質問するためにこの勉強会の意義がある&lt;/strong&gt;ような気がした。&lt;/p&gt;
+
+&lt;p&gt;第二回は「自分では仕様書を読む習慣を作れないから、勉強会でむりやり時間を作って読む」ために参加した。&lt;/p&gt;
+
+&lt;p&gt;第三回は「わかった気になった仕様書を本当の意味で理解する」ために参加すればよかった。&lt;/p&gt;
+
+&lt;p&gt;次回からはこれで。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sol Republic SHADOW</title>
+      <link>http://thleap.net/blog/sol-republic-shadow/</link>
+      <pubDate>Sat, 14 Nov 2015 16:42:56 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/sol-republic-shadow/</guid>
+      <description>&lt;p&gt;今回ワイヤレスイヤホンが出ていることを友だちに聴いて、しばらく迷った末に買った。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/1vwH7z&#34;&gt;【国内正規品】Sol Republic SHADOW カナル型ワイヤレスイヤホン《Bluetooth対応/iOS対応リモコン》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;コードなしイヤホンを買った理由（コードありイヤホンの欠点）:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;携帯のイヤホンジャックが潰れたことが購入を考えだした始まり&lt;/li&gt;
+&lt;li&gt;ディスプレイを使って作業しているときは、タイピング中にコードが手に当たるのが邪魔でストレスに&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ワイヤレスイヤホンはいくつかあるみたいだけど、その中で見た目が一番気に入ったものを買った。家電量販店に行って色々見て回ったりもしたけど、これ以外に気にいるような見た目のものはなかった。&lt;/p&gt;
+
+&lt;p&gt;購入時に音質のレビューなどはあまり気にしなかったが、Apple の付属品についてくるイヤホンよりは良さそうだ。こだわる人からすると音が割れてるとか、そういうことが気になるかもしれないけど、僕はそのへん多くを求めてないので許容できた。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>仕様書を読む 1.5時間</title>
+      <link>http://thleap.net/blog/tokyo-css-specs/</link>
+      <pubDate>Thu, 22 Oct 2015 01:54:57 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/tokyo-css-specs/</guid>
+      <description>
+
+&lt;p&gt;みんなで仕様書読もうの会に参加してきた。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://tokyo-css-module-specs.connpass.com/event/21413/&#34;&gt;第二回 W3C CSS Module 仕様書もくもく会@東京&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;僕は約 1時間半で &lt;a href=&#34;http://standards.mitsue.co.jp/resources/w3c/TR/css3-color/&#34;&gt;CSS Color Module Level 3（日本語訳）&lt;/a&gt;をちょうど読みきった。Web ドキュメント 1ページ読むには時間がかかりすぎたかもしれないけど、最後には達成感があって良かった。この勉強会は次回があるようなので是非参加したい。&lt;/p&gt;
+
+&lt;p&gt;今日読んだ仕様書に関して言えば、CSS の話だけど色に関することなのでその方面の知識も当然必要で、特にモニター上での色の表現というのを勉強しておく必要がありそうだ。色彩検定の本を一度読み直すか、&lt;a href=&#34;https://twitter.com/momdo_/status/656820498035159040&#34;&gt;誰かが紹介&lt;/a&gt;していた「&lt;a href=&#34;http://goo.gl/3aST8d&#34;&gt;徹底図解 色のしくみ―初期の光学理論から色彩心理学・民族の色彩まで&lt;/a&gt;」に新しく目を通してみても良いかもしれない。&lt;/p&gt;
+
+&lt;p&gt;あと、あまり仕様書とは関係ないところで思いついたんだけど、そばの色を基準に色相/明度/彩度の指定ができるとおもしろそうだ。背景色より &amp;ldquo;暗い&amp;rdquo; 色で枠線指定ができるとか、背景色に対して &amp;ldquo;アクセシビリティ基準をクリアした&amp;rdquo; 色を文字に指定できるとか。&lt;/p&gt;
+
+&lt;p&gt;多分今でも Sass とか使えば出来るんだろうけど、全然使えてなくて&amp;hellip; 。うん、これ以上言うこと無いな！&lt;/p&gt;
+
+&lt;h2 id=&#34;メモ:60329febe0016d039ec1ec76054d373b&#34;&gt;メモ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;case-insensitive とは、大文字小文字を区別しないという意味&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rgb(255,255,255)&lt;/code&gt; = &lt;code&gt;rgb(100%,100%,100%)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;RGBa 値をサポートしてないUAは、この値を無視する必要がある。RGB 値に変換してはならない&lt;/li&gt;
+&lt;li&gt;fuchsia はホクシア（フクシア）という植物の名前だけど、「赤紫色の」という意味もある。&lt;/li&gt;
+&lt;li&gt;&amp;lt;color&amp;gt; の定義に &lt;code&gt;transparent&lt;/code&gt; キーワードが加えられたのは CSS3 からで、これにより &amp;lt;color&amp;gt; を値にとるプロパティすべてで &lt;code&gt;transparent&lt;/code&gt; キーワードが使えるようになった&lt;/li&gt;
+&lt;li&gt;HSL の色相値は、円の角度による指定であるため &lt;code&gt;-120 = 240&lt;/code&gt; や &lt;code&gt;480 = 120&lt;/code&gt; という対応関係になる。（気を抜くと &lt;code&gt;-120 = 0&lt;/code&gt;、&lt;code&gt;480 = 360&lt;/code&gt; と覚えてしまいそうな）&lt;/li&gt;
+&lt;li&gt;CSS2 システムカラー値（ &lt;code&gt;ActiveBorder&lt;/code&gt;, &lt;code&gt;ActiveCaption&lt;/code&gt;, etc ）は、 CSS3 UI の &lt;code&gt;appearance&lt;/code&gt; プロパティの導入により廃止された。（当時どういった場面で使ってたんだろう）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;参考:60329febe0016d039ec1ec76054d373b&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://standards.mitsue.co.jp/resources/w3c/TR/css3-color/&#34;&gt;CSS カラーモジュール Level 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://togetter.com/li/889862&#34;&gt;第二回 W3C CSS Module 仕様書もくもく会@東京 - Color Module Level 3 を読む - Togetterまとめ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://geckotang.github.io/presentation-BacktoBasics-20150830/&#34;&gt;ご存じですか？colorプロパティ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/color_value&#34;&gt;&amp;lt;color&amp;gt; - CSS | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;これからの調べ物:60329febe0016d039ec1ec76054d373b&#34;&gt;これからの調べ物&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;opacity&lt;/code&gt; プロパティ、 &amp;lt;alphavalue&amp;gt; の扱い
+
+&lt;ul&gt;
+&lt;li&gt;説明の意味が上手く理解できない&lt;/li&gt;
+&lt;li&gt;スタッキングコンテキストを調べる必要がありそう&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ガモット
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://home.a02.itscom.net/color/gamut/gamut.html&#34;&gt;ひとまず&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;CRT&lt;/li&gt;
+&lt;li&gt;sRGB&lt;/li&gt;
+&lt;li&gt;foreground color&lt;/li&gt;
+&lt;li&gt;HSL と HSV の違い
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;HSL の利点に明るさと暗さが対称であること (これはたとえば HSV にはあてはまらない)&amp;rdquo; の意味が理解できない&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;削除された機能、 &lt;code&gt;@color-profile&lt;/code&gt; at-rule とは&lt;/li&gt;
+&lt;li&gt;削除された機能、 &lt;code&gt;flavor&lt;/code&gt; system color とは&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>属性セレクタ.属性セレクタ</title>
+      <link>http://thleap.net/blog/multiple-attribute-selector/</link>
+      <pubDate>Thu, 01 Oct 2015 01:13:41 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/multiple-attribute-selector/</guid>
+      <description>&lt;p&gt;&lt;code&gt;http://thleap.net/&lt;/code&gt; という &lt;code&gt;href&lt;/code&gt; 属性を持つ &lt;code&gt;.link&lt;/code&gt; というクラスに対して、以下の様なセレクタ指定はうまく適用されるのか !!?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.link[href*=&amp;quot;thleap&amp;quot;].link[href*=&amp;quot;net&amp;quot;] {
+  background: tomato;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;hellip;どうやらこの指定は適用されるようです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jsfiddle.net/thleap/o4ordrLj/1/&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CSS の属性セレクタは他にもいくつかあるので、試してみると面白いのが見つかるかも。&lt;/p&gt;
+
+&lt;p&gt;ちなみに僕はこれをユーザースタイルシートを書く時に使ったけど、普段 HTML 側も触れる状況で使うことは無さそう。（それはクラスを振りましょうという話になるので）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Back to Basics</title>
+      <link>http://thleap.net/blog/back-to-basics/</link>
+      <pubDate>Sun, 30 Aug 2015 23:28:32 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/back-to-basics/</guid>
+      <description>&lt;p&gt;「&lt;a href=&#34;http://peatix.com/event/105960&#34;&gt;CSSイベント「Back to Basics」 | Peatix&lt;/a&gt;」という勉強会に参加してきた。&lt;/p&gt;
+
+&lt;p&gt;で、この記事書いてる途中にイベントの様子がトゥギャられてた。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://togetter.com/li/867476&#34;&gt;CSSイベント「Back to Basics」2015/08 | togetter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;今回の勉強会の発表資料とかそれ関連のリンクとかつぶやきとかが適当に集まってる。発表資料や勉強会の様子は後日別の形でもどこかにまとめられるかもしれない。ブログとか。&lt;/p&gt;
+
+&lt;p&gt;さて、自分なりに勉強会を振り返ってみると、月並みだけど普段当たり前に使ってる CSS のことでも知らないことだらけだったなーという感想。&lt;/p&gt;
+
+&lt;p&gt;一部の LT を除いて、発表を聞くまで知らなかったプロパティとか用語はほとんど出てこなかった。でも、発表の内容を聞けば聞くほど、それは言葉だけを知っていただけで中身を全然理解できて無かったんだなーって少し悲しくなった。（僕も CSS と触れ合ってきた時間はそれなりに長くなってきたからね）&lt;/p&gt;
+
+&lt;p&gt;あと、仕様書に目を通しておくことの大切さも各セッションで言われていた。&lt;/p&gt;
+
+&lt;p&gt;仕様で決められた型や役割があって、それを踏まえた上でブラウザ側での実装がある（中には都合上仕様通りに実装されてないものもある）。ときには誰も予期せぬバグなんてのがあるけれど、仕様書を読み解くことで目の前の表示崩れの原因が分かることも多い。&lt;/p&gt;
+
+&lt;p&gt;一つの問題が発生した時、それに対して表層的に対処するのは簡単だ。CSS でスタイルングしたサイトの見た目が崩れたのならば、それを綺麗に整えるのは無茶をすればいくらでもできる。要素をいくつも重ねて、プロパティを何度も上書きして、誰も理解できないセレクタで指定して&amp;hellip; 。&lt;/p&gt;
+
+&lt;p&gt;ただ、&lt;strong&gt;根本的な原因を理解していれば、もっと楽に、スマートに解決できる&lt;/strong&gt;んじゃないかな。その根本的な原因を理解するには&lt;strong&gt;仕様書を読む&lt;/strong&gt;のが確実で手っ取り早いって話だと思う。&lt;/p&gt;
+
+&lt;p&gt;一人 30分の発表ではこちらの理解が追いつかなくて、今はちょいちょい登壇者の方のスライド見返してたりする。発表の中にデモを取り入れてるものが多いのが救い。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;ブログをお休みしながら書いてると一つの記事書くだけで大変、Oh !!! 大変 !!! ってなる。適当に短く簡潔に済ませたいんだけど、時間はかかるし文章はまとまらないしで、マジ苦労。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>僕はあの日夕暮れ時に書いたスタイルガイドを忘れない</title>
+      <link>http://thleap.net/blog/please-remember-your-styleguide/</link>
+      <pubDate>Thu, 27 Aug 2015 23:43:19 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/please-remember-your-styleguide/</guid>
+      <description>
+
+&lt;p&gt;HTML5ビギナーズのイベント、「&lt;a href=&#34;http://eventdots.jp/event/567756&#34;&gt;第12回HTML5ビギナーズ 目指せ脱初心者！現場で使われている実践スキルとは？&lt;/a&gt;」で LT をしてきた。&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;db7f920c53f14ae09f2ef9125a02eb4c&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;発表するのに用意した原稿:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;今日は、昔時間をかけて作ったスタイルガイドを枯れさせないために僕はどう動いたか、プロジェクトのコードの一貫性を保つためにどのタイミングで手を加えていったか、そんな話をしたいと思います。
+
+まぁ体験談です。
+
+特に新しいツールの紹介もなければ、難しい話もありません。ただ、その分、この話を聞いてくださった方が次の日には行動に移せるような、そんな話にはなっていると思います。
+
+## 自己紹介
+@thleap という名前でデザインとか、Web サイトのコーディングをやってる人です。
+
+## 君はあの日書いたスタイルガイドのことを覚えているか
+
+皆さん、モジュールを定義したスタイルガイドではなくて、命名規則とかコメントの形式とか、そういったものを記したスタイルガイドって作ったことありませんか？もしくは今参加しているプロジェクトにありませんか？
+
+もし作った方がいれば、それって今どうなっていますか？
+
+---
+
+ちなみに僕は去年作りました。去年作って、そのままです... 。
+
+---
+
+昔時間をかけて書いたガイドラインのことを忘れてませんか、書いたまま放置していませんか、こんなふうになってませんか。
+
+- プロジェクトのコードに一貫性がなくなってきた
+- コードがルールにそぐわないようになってきた
+- 今自分の頭の中にある考えと、昔ドキュメントに書いた考えが違う
+
+---
+
+一年も経つとスタイルガイドが用をなさなくなってきたことに気付き出します。ですが、面倒なのでそのままです。
+
+無くても困らないものにわざわざ手を付けたくないというのが、やはり人間の心です。
+
+---
+
+こうしてスタイルガイドは枯れていきます。
+
+## 忘れたくないものを忘れないようにするには
+では、忘れたくないものを忘れないようにするために、普段僕らはどうしてるでしょうか。
+
+---
+
+食事とか睡眠のように、何もしなくても、何も考えなくても、生きるために必要だから忘れないものもあります。
+
+でもそれとは逆に、普段から必要じゃないものはすぐに忘れてしまいます。そういったものを覚えておくには、毎日目で見える場所に置いて、それに触れて、思い出すようにしないといけません。
+
+---
+
+- 食後に服用する薬
+    - 鞄の中に入れたりしてると目につかないので忘れる
+    - 食後 30分以内を過ぎると存在を忘れる
+    - （食事をする机に置いて、食べた皿を洗う前に飲むようにすると忘れない）
+
+---
+
+- 毎日 15分のジョギング
+    - 玄関にジョギングシューズが出てないと忘れる
+    - 怠けて 3日空けると忘れる
+    - （玄関に立てばすぐ走れるような準備をして、期間を空けずに走ると忘れない）
+
+---
+
+それを行うのに適切なタイミングを見つけ、行動を思い起こすモノ・もしくはそれ自身を置く場所に気を使い、一度始めたら間を空けずに続けることが大切です。
+
+## プロジェクトに小さく足跡を刻む
+では、話を「スタイルガイドを枯れさせないためにはどうするか」というのに戻します。
+
+---
+
+先ほどのスタイルガイドですが、実は僕が関わった別のプロジェクトでも使われています。...というよりは、元のスタイルガイドと同じ時期にそのプロジェクトに（僕が）投げ入れてそのままだったので、最近まで同じように枯れていました。
+
+thleap/styleguide （元のもの）は相変わらず枯れているのですが、プロジェクトのWikiに置いているものは最近調子が良いのでこれの話をします。（プライベートなプロジェクトなので、実際のコードは見せられないのですが）
+
+---
+
+スタイルガイドはプロジェクトの Wiki に置いて、毎週どこかで帰る前の 30分、コードやスタイルガイドに手を付けていました。
+
+それを二ヶ月ほど続けました。
+
+---
+
+とあるプロジェクトでの変更例その一です。  
+もちろんこのように一行だけではないですが、クラス名を変えただけですね。
+
+---
+
+その二です。  
+HEX カラーコードで指定された色の値を Sass の変数に変えただけですね。
+
+---
+
+その三です。
+...ルールに基いて変更しようとしましたが、変更前の方が良いですね。
+
+---
+
+こういったときはコードではなく、ルールの方を変更しましょう。
+
+---
+
+どんなに小さな変更でも良いので、プロジェクトのコードに触れることが大切です。
+
+## 最後に
+スタイルガイドはコードの一貫性を保つためのドキュメントです。  
+それを上手く活かしたなら、コードにも自然と一貫性が生まれるはずです。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;反省:360963f1786bb937beda69c150a3b128&#34;&gt;反省&lt;/h2&gt;
+
+&lt;p&gt;スライド作りには以前と同じように時間を使った。発表用の原稿（上のやつ）も用意したし、それを使って発表の練習もした。&lt;/p&gt;
+
+&lt;p&gt;でも、スライドと原稿を照らし合わせながら練習するのを怠ってしまったな&amp;hellip; 。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://thleap.net/blog/make-it-with-member/&#34;&gt;盆LT&lt;/a&gt; を終えて少し勇気が出たので、他のイベントでも人前に出て話をしてみる気になった。&lt;/p&gt;
+
+&lt;p&gt;この感覚というか、この気持ちを忘れないようにしたい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>分割印刷</title>
+      <link>http://thleap.net/blog/split-pint/</link>
+      <pubDate>Thu, 20 Aug 2015 22:45:18 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/split-pint/</guid>
+      <description>&lt;p&gt;あれなんだってね、本来プリンターが勝手に A4 一枚に収める一つのデータを、印刷の設定で四分割にして四枚に分けて印刷するのってプリンターによってできる・できないがあるんだってね。普段紙に何かを印刷する機会が少ないから知らなかったけど、普通にできるもんだと思ってた。&lt;/p&gt;
+
+&lt;p&gt;分割印刷ができる高性能なプリンターなんて家にないので、今回僕は ImageMagick を使って 10000px * 6500px くらいの画像データを四等分した。&lt;/p&gt;
+
+&lt;p&gt;打ったコマンドはシンプルで、次の通り。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ convert -crop 50% src/image.png dest/image.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これで &lt;code&gt;src/image.png&lt;/code&gt; というデカイ画像は四分割され、&lt;code&gt;dest&lt;/code&gt; に &lt;code&gt;image-0.png&lt;/code&gt;, &lt;code&gt;image-1.png&lt;/code&gt; &amp;hellip; という形で放り込まれる。便利。&lt;/p&gt;
+
+&lt;p&gt;ただ、後から調べてみると Illustrator に分割印刷ができる機能がついていたようで、こっちの方が簡単だし毎回書きだした画像を分割する手間が省けるので良い。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://helpx.adobe.com/jp/illustrator/kb/2189.html&#34;&gt;大きなサイズのドキュメントを複数ページに分けて印刷する方法 （Illustrator CC） | Illustrator Help&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/6m0w5X&#34;&gt;Illustratorで大きなサイズのポスターを分割印刷する方法 | ラクスル&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;やりたいことが出来て、それより賢そうな方法が後からだけど見つかって、なんだか満足。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://thleap.net/images/blog/split-print/haniwa.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上の写真は本題とは何も関係のない埴輪。よく行く公園で撮影した。&lt;/p&gt;
+
+&lt;p&gt;ずーっと無表情でこちらを見ていたんだけど、不思議と冷酷さは感じず、どちらかというと見守られているような感覚になった。&lt;/p&gt;
+
+&lt;p&gt;今日は少し街を長く歩いた。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>配置に関するスタイルを別モジュールで定義する</title>
+      <link>http://thleap.net/blog/separate-module-by-layout/</link>
+      <pubDate>Thu, 02 Jul 2015 22:42:55 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/separate-module-by-layout/</guid>
+      <description>&lt;p&gt;例えばこんな HTML と CSS があったとする。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;block&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;block-card&amp;quot;&amp;gt;
+    &amp;lt;p class=&amp;quot;block-card-title&amp;quot;&amp;gt;タイトル&amp;lt;small class=&amp;quot;block-card-title-note&amp;quot;&amp;gt;（注意書き的な）&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;p class=&amp;quot;block-card-summary&amp;quot;&amp;gt;ウンタラカンタラかんたらうんたらウンタラカンタラかんたらうんたら&amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;block-card&amp;quot;&amp;gt; ... &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;block-card&amp;quot;&amp;gt; ... &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.block { ... }
+.block-card {
+  margin: 1em 0;
+  padding: 1em;
+  ...
+}
+.block-card-title { ... }
+.block-card-title-note { ... }
+.block-card-summary { ... }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;すべての場合において同じように言えるわけではないけど、この場合 &lt;code&gt;.card&lt;/code&gt; は独立したモジュールとして管理できる。&lt;/p&gt;
+
+&lt;p&gt;そして、他の場所でも &lt;code&gt;.card&lt;/code&gt; のスタイルを使う機会があり、それに配置的なプロパティ（ ここでは &lt;code&gt;margin: 1em 0&lt;/code&gt; ）を必要としないのであれば、 &lt;code&gt;.block&lt;/code&gt; と &lt;code&gt;.card&lt;/code&gt; のモジュールは分けたほうが良いと思う。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- better --&amp;gt;
+&amp;lt;div class=&amp;quot;block&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;block-item card&amp;quot;&amp;gt;
+    &amp;lt;p class=&amp;quot;card-title&amp;quot;&amp;gt;タイトル&amp;lt;small class=&amp;quot;card-title-note&amp;quot;&amp;gt;（注意書き的な）&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;p class=&amp;quot;card-summary&amp;quot;&amp;gt;ウンタラカンタラかんたらうんたらウンタラカンタラかんたらうんたら&amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;block-item card&amp;quot;&amp;gt; ... &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;block-item card&amp;quot;&amp;gt; ... &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.block { ... }
+.block-item {
+  margin: 1em 0;
+}
+
+.card {
+  padding: 1em;
+  ...
+}
+.card-title { ... }
+.card-title-note { ... }
+.card-summary { ... }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;何度か自分で振り返って同じことを書いてる気がするけど、さぁやるぞ！とコーディングを開始した時は勢いで前者のように書いてしまうことが多い。作業が進むにつれて &lt;code&gt;margin&lt;/code&gt; は邪魔になってきて、最後になって後者に書きなおすことになる。&lt;/p&gt;
+
+&lt;p&gt;色やサイズもそうなんだけど、モジュールを組む際は &lt;code&gt;margin&lt;/code&gt;, &lt;code&gt;float&lt;/code&gt;, &lt;code&gt;position&lt;/code&gt; などの配置に関わるプロパティは特に気をつけていこう。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>線を分割するテキストの配置</title>
+      <link>http://thleap.net/blog/text-that-separates-line/</link>
+      <pubDate>Tue, 23 Jun 2015 18:59:21 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/text-that-separates-line/</guid>
+      <description>&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/thleap/7u5ksp8x/2/embedded/result%2Ccss/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;文字が箱を持っているか、背景がベタで塗られているなら簡単で、これらの場合は文字部分の箱を線に被せるようにすれば問題ない。&lt;/p&gt;
+
+&lt;p&gt;問題になるのは背景が画像やグラデーションの時などで、上から要素を被せて線を隠すことができないとき。そういった時に上記のような CSS が役立つだろうと思ってる。&lt;/p&gt;
+
+&lt;p&gt;ただ、文字と線の余白を &lt;code&gt;transform: translateX&lt;/code&gt; で空けてるのはなんとも言えない、というかダメだろうけど、他にはグラデーションで &lt;code&gt;linear-gradient(left, transparent .5em, black .5em)&lt;/code&gt; とする方法しか思いつかなくて、それなら前者でやったほうがまだマシだろうということでこうしてる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>隣接セレクタの罠</title>
+      <link>http://thleap.net/blog/trap-of-adjacent-selector/</link>
+      <pubDate>Fri, 12 Jun 2015 19:04:45 +0900</pubDate>
+      
+      <guid>http://thleap.net/blog/trap-of-adjacent-selector/</guid>
+      <description>&lt;p&gt;グリッド内のアイテムを横並べにしようとして躓いた。以前書いた&lt;a href=&#34;http://thleap.net/blog/list-separation-border/&#34;&gt;この方法&lt;/a&gt;でアイテムに余白をもたせようとしたんだけど、下のコードでは意図した表示にはならなかった。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jsfiddle.net/thleap/2pftphqe/5&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;.grid .item + .grid .item {
+  margin-left: 20px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これでは「 &lt;code&gt;.grid&lt;/code&gt; の子孫の &lt;code&gt;.item&lt;/code&gt; 」と隣接する「 &lt;code&gt;.grid .item&lt;/code&gt; 」にスタイルが適用されてしまい、&lt;code&gt;.grid .item&lt;/code&gt; 同士は隣り合っていてもスタイルが適用されない。&lt;/p&gt;
+
+&lt;p&gt;隣接する &lt;code&gt;.grid .item&lt;/code&gt; にスタイルを適用したいのであれば、正しくは以下のように指定する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jsfiddle.net/thleap/2pftphqe/4/&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;.grid .item + .item {
+  margin-left: 20px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;このへんがややこしい。というか、問題が発見されにくく、&lt;code&gt;.grid .item + .grid .item&lt;/code&gt; と &lt;code&gt;.grid .item + .item&lt;/code&gt; の違いが一目ではわからない。&lt;/p&gt;
+
+&lt;p&gt;自分で書くときは &lt;code&gt;.item&lt;/code&gt; を &lt;code&gt;.grid-item&lt;/code&gt; とし、以下のように書いておくのが良さそうだ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.grid-item + .grid-item {
+  margin-left: 20px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;今回書いた隣接セレクタの件は、他人が書いたコードを見て指定内容が把握できれば良い、くらいで考えておこうか。&lt;br /&gt;
+自分では書かないようにする（書いても忘れるから）のがベストだろう。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

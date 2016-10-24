@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>図形の一部に角丸を適用 - thleap.net</title>
+
+
+
+  <meta name="description" content="Sketch3 では角丸四角形の四隅それぞれに違う値が設定できる。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">図形の一部に角丸を適用</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-08-12" class="metas-item">2015.08.12</time>
+            
+              <span class="metas-item">design</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        <p><img src="/images/blog/sketch-corner-radius/image.png" alt="" /></p>
+
+<p>一つの角だけ丸くしたいことは稀かもしれないけど、上下どちらか二つの角とか、左右どちらか二つの角を丸くすることは頻繁にあるのでこれは便利。</p>
+
+<p>四隅に指定する角丸の値は「左上・右上・右下・左下」の順で行い（CSS の <code>border-radius</code> と一緒）、その数値はスラッシュ（<code>/</code>）を使って区切る。Sketch 上で入力する箇所はいつも場所と同じだ。</p>
+
+<pre><code># 上二つの角を丸くする
+40/40/0/0
+
+# 右二つの角を丸くする
+0/40/40/0
+
+# どこかでよく見るやつっぽい図形に
+40/40/40/0
+</code></pre>
+
+<p><code>40/40</code> と入力すれば全方向角丸の半径が <code>40px</code> になり、<code>40/0</code> とすれば勝手にその後が補完されて <code>40/0/0/0</code> となり、<code>40/10</code> とすれば <code>40/10/10/10</code> となる。（ <code>40/10</code> とすれば <code>40/40/10/10</code> にしてほしいとか、そういう勝手で個人的な要望があるがそれは置いておこう。まぁ <code>40/10/40/10</code> には全然してほしくないんだけどね&hellip; ）</p>
+
+<p>ちなみに Fireworks を使ってた頃は、マスクやアンカーポイントの編集で同じことを実現させていた。どちらも数秒で出来ることなんだけど、同じ作業をする頻度がそれなりに高かったので面倒だった。</p>
+
+<p>今までと比べるとやっぱりこれは便利だなぁって、しみじみ。</p>
+
+<hr />
+
+<p>Sketch といえば <a href="https://zeplin.io/">ZEPLIN</a> というのを今日見つけて触ってみた。リンクさえ共有すれば誰でもファイルの閲覧ができそうなのが気になったけど、ハゲそうなくらい便利だと思った。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/morning/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/tuka-samu/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

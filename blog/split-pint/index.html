@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>分割印刷 - thleap.net</title>
+
+
+
+  <meta name="description" content="自宅のプリンターで分割印刷をするときの話。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">分割印刷</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-08-20" class="metas-item">2015.08.20</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        <p>あれなんだってね、本来プリンターが勝手に A4 一枚に収める一つのデータを、印刷の設定で四分割にして四枚に分けて印刷するのってプリンターによってできる・できないがあるんだってね。普段紙に何かを印刷する機会が少ないから知らなかったけど、普通にできるもんだと思ってた。</p>
+
+<p>分割印刷ができる高性能なプリンターなんて家にないので、今回僕は ImageMagick を使って 10000px * 6500px くらいの画像データを四等分した。</p>
+
+<p>打ったコマンドはシンプルで、次の通り。</p>
+
+<pre><code class="language-sh">$ convert -crop 50% src/image.png dest/image.png
+</code></pre>
+
+<p>これで <code>src/image.png</code> というデカイ画像は四分割され、<code>dest</code> に <code>image-0.png</code>, <code>image-1.png</code> &hellip; という形で放り込まれる。便利。</p>
+
+<p>ただ、後から調べてみると Illustrator に分割印刷ができる機能がついていたようで、こっちの方が簡単だし毎回書きだした画像を分割する手間が省けるので良い。</p>
+
+<ul>
+<li><a href="https://helpx.adobe.com/jp/illustrator/kb/2189.html">大きなサイズのドキュメントを複数ページに分けて印刷する方法 （Illustrator CC） | Illustrator Help</a></li>
+<li><a href="http://goo.gl/6m0w5X">Illustratorで大きなサイズのポスターを分割印刷する方法 | ラクスル</a></li>
+</ul>
+
+<p>やりたいことが出来て、それより賢そうな方法が後からだけど見つかって、なんだか満足。</p>
+
+<hr />
+
+<p><img src="/images/blog/split-print/haniwa.png" alt="" /></p>
+
+<p>上の写真は本題とは何も関係のない埴輪。よく行く公園で撮影した。</p>
+
+<p>ずーっと無表情でこちらを見ていたんだけど、不思議と冷酷さは感じず、どちらかというと見守られているような感覚になった。</p>
+
+<p>今日は少し街を長く歩いた。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/sticky50/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/short-trip/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

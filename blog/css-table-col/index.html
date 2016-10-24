@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>テーブルにおける列のあつかい - thleap.net</title>
+
+
+
+  <meta name="description" content="テーブルに列があるのは知っていたが、それで何ができるのかは知らなかった。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">テーブルにおける列のあつかい</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-12-09" class="metas-item">2015.12.09</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        
+
+<p>今日は「<a href="http://qiita.com/advent-calendar/2015/html5">HTML5 Advent Calendar 2015</a>」9日目。明日は @tanikawa さん。</p>
+
+<hr />
+
+<p>今回は CSS のお話。</p>
+
+<p>もう一ヶ月も前になるが、<a href="http://tokyo-css-module-specs.connpass.com/">W3C CSS Module 仕様書もくもく会@東京</a>という勉強会に参加した。そのときに、<a href="http://momdo.github.io/css2/tables.html">CSS 2.2 テーブルの章</a>を読んで（聴いて？）テーブルの列の存在を知ったので、そのあたりを少し振り返ろうと思う。</p>
+
+<p>まず、僕は CSS で <code>display: table-column</code> を使ったこともなければ、HTML で <code>colgroup</code> や <code>col</code> 要素を使ったこともなかった。たまたま機会が無かっただけだが、その<a href="http://www.w3schools.com/tags/tag_col.asp">指定の方法</a>は使い方を知ったいまでも少し不思議な感じがしている。</p>
+
+<p>そんな感じで日本語に訳された仕様書に目を通したわけだが、基本的にテーブルの各セルは行の子孫としてあつかわれるようんだ。じゃあ列はどういうあつかいになるかというと、次のプロパティは列によって操作することが出来る。</p>
+
+<ul>
+<li><code>border</code></li>
+<li><code>background</code></li>
+<li><code>width</code></li>
+<li><code>visibility</code></li>
+</ul>
+
+<p><code>background</code> に関しては次のように書いてある。</p>
+
+<blockquote>
+<p>背景プロパティーは列内のセルの背景を設定するが、セルと行の両方が透明な背景を持つ場合に限る。</p>
+</blockquote>
+
+<p>これがどういうことかというと&hellip; 、こんな感じ。</p>
+
+<ul>
+<li>列のみに背景色を指定（tan, lime）: <a href="http://jsfiddle.net/thleap/p5af5Ls5/18/">http://jsfiddle.net/thleap/p5af5Ls5/18/</a></li>
+<li>行と列に背景色を指定（yellow）: <a href="http://jsfiddle.net/thleap/p5af5Ls5/17/">http://jsfiddle.net/thleap/p5af5Ls5/17/</a></li>
+</ul>
+
+<p><code>width</code> プロパティでは列の最小幅を決めることができるが、これは普段の制作でもよく使われる気がする。</p>
+
+<p>あ、と、これ以上書くことが無くて困ってしまったので、このあたりで。（テーブルの列、いつ使うんだろう）</p>
+
+<h2 id="おまけ:207ab35ca588ffc37b748dc07f92b09b">おまけ</h2>
+
+<p><code>caption-side</code> プロパティも知らなかった。ただ、知っていても HTML を編集すれば良いんじゃないかという感じで、やっぱりどこで使えば良いか思いつかない。</p>
+
+<ul>
+<li>指定なし: <a href="http://jsfiddle.net/thleap/nwnya6r7/4/">http://jsfiddle.net/thleap/nwnya6r7/4/</a></li>
+<li><code>caption-side: bottom</code>: <a href="http://jsfiddle.net/thleap/nwnya6r7/3/">http://jsfiddle.net/thleap/nwnya6r7/3/</a></li>
+</ul>
+
+<p>列やキャプションの配置以外にも、テーブル関連の仕様は知らないことが多かったけど、それを知ったところで次にどうつなげて良いのかわからずにいる。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/drawing-face/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/sake-install/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>リストを水平線で区切るときには隣接セレクタを - thleap.net</title>
+
+
+
+  <meta name="description" content="最後の一本を消すのではなく、最初から出さない指定にする。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">リストを水平線で区切るときには隣接セレクタを</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-05-29" class="metas-item">2015.05.29</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        <p>リストの間に引く線を最後の一本だけ消すというの、これまではこうしてた。<code>last-child</code> を使って最後のボーダーを打ち消す形。</p>
+
+<pre><code class="language-css">ul {
+  padding-left: 0;
+  border: 2px solid black;
+  list-style-type: none;
+  li {
+    padding: .5em 1em;
+    border-top: 2px solid gray;
+    &amp;:last-child {
+      border: none;
+    }
+  }
+}
+</code></pre>
+
+<p>こうでええやんというの。隣接セレクタ（ <code>li + li</code> ）を用いる。<br />
+二本目からリスト項目の上にボーダーを引くようにする。</p>
+
+<pre><code class="language-css">ul {
+  padding-left: 0;
+  border: 2px solid black;
+  list-style-type: none;
+  li {
+    padding: .5em 1em;
+    &amp; + li { /* &lt;- */
+      border-top: 2px solid gray;
+    }
+  }
+}
+</code></pre>
+
+<p>場合によるけど、だいたいこれで良さそうだ。</p>
+
+<hr />
+
+<p>あれ、CSS 結構長いこと書いてるのに今日気づいたぞ。アレ。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/lazy-day-before-coding-tumblr/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/fancy-travel-trap/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

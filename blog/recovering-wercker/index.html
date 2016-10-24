@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>wercker で再びビルドが成功するまで - thleap.net</title>
+
+
+
+  <meta name="description" content="解決までひどく遠回りをした気がするが、wercker はできるだけ知識を身につけずに使っていたいというのがある。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">wercker で再びビルドが成功するまで</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-12-03" class="metas-item">2015.12.03</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        
+
+<h2 id="怒られ-ビルドに失敗する:5b55f15685974019d95eef5e7ae53481">怒られ、ビルドに失敗する</h2>
+
+<pre><code>// arjen/hugo-build
+
+cd $WERCKER_SOURCE_DIR
+$ export WERCKER_STEP_ROOT=&quot;/wercker/steps/arjen/hugo-build/1.8.0&quot;
+$ export WERCKER_STEP_ID=&quot;82c22bbe-a946-45d4-9a7d-cd743502e86e&quot;
+$ export WERCKER_STEP_NAME=&quot;hugo-build&quot;
+$ export WERCKER_REPORT_NUMBERS_FILE=&quot;$WERCKER_REPORT_DIR/$WERCKER_STEP_ID/numbers.ini&quot;
+$ export WERCKER_REPORT_MESSAGE_FILE=&quot;$WERCKER_REPORT_DIR/$WERCKER_STEP_ID/message.txt&quot;
+$ export WERCKER_REPORT_ARTIFACTS_DIR=&quot;$WERCKER_REPORT_DIR/$WERCKER_STEP_ID/artifacts&quot;
+$ mkdir -p $WERCKER_REPORT_ARTIFACTS_DIR
+$ export WERCKER_STEP_TEMP=&quot;/tmp/$WERCKER_STEP_ID&quot;
+$ source '/wercker/wercker-build-essentials/init.sh'
+$ mkdir -p $WERCKER_STEP_TEMP
+$ export WERCKER_HUGO_BUILD_VERSION=&quot;0.14&quot;
+$ export WERCKER_HUGO_BUILD_DISABLE_PYGMENTS=&quot;false&quot;
+$ export WERCKER_HUGO_BUILD_FORCE_INSTALL=&quot;false&quot;
+$ export WERCKER_HUGO_BUILD_PROD_BRANCHES=&quot;&quot;
+$ export WERCKER_HUGO_BUILD_DEV_BRANCHES=&quot;&quot;
+$ export WERCKER_HUGO_BUILD_DEV_FLAGS=&quot;&quot;
+$ export WERCKER_HUGO_BUILD_FLAGS=&quot;&quot;
+$ export WERCKER_HUGO_BUILD_CONFIG=&quot;&quot;
+$ export WERCKER_HUGO_BUILD_THEME=&quot;&quot;
+$ source &quot;$WERCKER_STEP_ROOT/run.sh&quot;
+E: List directory /var/lib/apt/lists/partial is missing. - Acquire (13: Permission denied)
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+</code></pre>
+
+<p><a href="https://github.com/ArjenSchwarz/wercker-step-hugo-build/issues/8">Issue with wercker/default (HTTP 404) · Issue #8 · ArjenSchwarz/wercker-step-hugo-build</a> を見ると、「バージョン番号を引用符でくくり、box は debian 使って」みたいに言ってるので、それに。</p>
+
+<p><code>wercker.yml</code> をこのようにした:</p>
+
+<pre><code>box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: &quot;0.14&quot;
+
+deploy:
+  steps:
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: thleap.net
+        basedir: _public
+</code></pre>
+
+<h2 id="叱られる:5b55f15685974019d95eef5e7ae53481">叱られる</h2>
+
+<pre><code>Setting up environment...
+
+Using wercker.yml:
+box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: &quot;0.14&quot;
+deploy:
+  steps:
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: thleap.net
+        basedir: _public
+Setup environment failed:
+Box debian defined in wercker.yml not found
+
+Sentinel: production-sentinel-12
+</code></pre>
+
+<p><a href="http://devcenter.wercker.com/docs/faq/migration-tips-v2.html">wercker - docs - Migration Tips to wercker v2</a> を参考に wercker のサイト内で設定を変えることに。</p>
+
+<p>以下のメニューの設定リンクを選択。</p>
+
+<p><img src="/images/blog/recovering-wercker/header-setting-link.png" alt="" /></p>
+
+<p>Infrastructure stack を変更（変更前はClassicになってた）。</p>
+
+<p><img src="/images/blog/recovering-wercker/infrastructure-stack-select.png" alt="" /></p>
+
+<p>これで以前のようにビルドに成功した。めでたし (?) 。</p>
+
+<h2 id="まだダメだった-デプロイに失敗:5b55f15685974019d95eef5e7ae53481">まだダメだった（デプロイに失敗）</h2>
+
+<p>フォーラムを見ているとまさに<a href="https://discuss.gohugo.io/t/automated-hugo-deployments-anywhere-using-wercker/539/39">同じようなエラー</a>を出している人がいた。それに対して、次の人がコメントで <code>wercker.yml</code> の <code>deploy: steps:</code> の後に2行ほど足せば何とかなるでみたいなこと言ってるので、その通りに。</p>
+
+<pre><code>deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+...
+</code></pre>
+
+<p>Done.</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/dainippon-type-ggg/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/upgrade-hugo-v015/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

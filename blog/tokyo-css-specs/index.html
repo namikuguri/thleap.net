@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>仕様書を読む 1.5時間 - thleap.net</title>
+
+
+
+  <meta name="description" content="「第二回 W3C CSS Module 仕様書もくもく会@東京」に参加したので感想とメモを残そう。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">仕様書を読む 1.5時間</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-10-22" class="metas-item">2015.10.22</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        
+
+<p>みんなで仕様書読もうの会に参加してきた。</p>
+
+<ul>
+<li><a href="http://tokyo-css-module-specs.connpass.com/event/21413/">第二回 W3C CSS Module 仕様書もくもく会@東京</a></li>
+</ul>
+
+<p>僕は約 1時間半で <a href="http://standards.mitsue.co.jp/resources/w3c/TR/css3-color/">CSS Color Module Level 3（日本語訳）</a>をちょうど読みきった。Web ドキュメント 1ページ読むには時間がかかりすぎたかもしれないけど、最後には達成感があって良かった。この勉強会は次回があるようなので是非参加したい。</p>
+
+<p>今日読んだ仕様書に関して言えば、CSS の話だけど色に関することなのでその方面の知識も当然必要で、特にモニター上での色の表現というのを勉強しておく必要がありそうだ。色彩検定の本を一度読み直すか、<a href="https://twitter.com/momdo_/status/656820498035159040">誰かが紹介</a>していた「<a href="http://goo.gl/3aST8d">徹底図解 色のしくみ―初期の光学理論から色彩心理学・民族の色彩まで</a>」に新しく目を通してみても良いかもしれない。</p>
+
+<p>あと、あまり仕様書とは関係ないところで思いついたんだけど、そばの色を基準に色相/明度/彩度の指定ができるとおもしろそうだ。背景色より &ldquo;暗い&rdquo; 色で枠線指定ができるとか、背景色に対して &ldquo;アクセシビリティ基準をクリアした&rdquo; 色を文字に指定できるとか。</p>
+
+<p>多分今でも Sass とか使えば出来るんだろうけど、全然使えてなくて&hellip; 。うん、これ以上言うこと無いな！</p>
+
+<h2 id="メモ:60329febe0016d039ec1ec76054d373b">メモ</h2>
+
+<ul>
+<li>case-insensitive とは、大文字小文字を区別しないという意味</li>
+<li><code>rgb(255,255,255)</code> = <code>rgb(100%,100%,100%)</code></li>
+<li>RGBa 値をサポートしてないUAは、この値を無視する必要がある。RGB 値に変換してはならない</li>
+<li>fuchsia はホクシア（フクシア）という植物の名前だけど、「赤紫色の」という意味もある。</li>
+<li>&lt;color&gt; の定義に <code>transparent</code> キーワードが加えられたのは CSS3 からで、これにより &lt;color&gt; を値にとるプロパティすべてで <code>transparent</code> キーワードが使えるようになった</li>
+<li>HSL の色相値は、円の角度による指定であるため <code>-120 = 240</code> や <code>480 = 120</code> という対応関係になる。（気を抜くと <code>-120 = 0</code>、<code>480 = 360</code> と覚えてしまいそうな）</li>
+<li>CSS2 システムカラー値（ <code>ActiveBorder</code>, <code>ActiveCaption</code>, etc ）は、 CSS3 UI の <code>appearance</code> プロパティの導入により廃止された。（当時どういった場面で使ってたんだろう）</li>
+</ul>
+
+<h2 id="参考:60329febe0016d039ec1ec76054d373b">参考</h2>
+
+<ul>
+<li><a href="http://standards.mitsue.co.jp/resources/w3c/TR/css3-color/">CSS カラーモジュール Level 3</a></li>
+<li><a href="http://togetter.com/li/889862">第二回 W3C CSS Module 仕様書もくもく会@東京 - Color Module Level 3 を読む - Togetterまとめ</a></li>
+<li><a href="http://geckotang.github.io/presentation-BacktoBasics-20150830/">ご存じですか？colorプロパティ</a></li>
+<li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/color_value">&lt;color&gt; - CSS | MDN</a></li>
+</ul>
+
+<h2 id="これからの調べ物:60329febe0016d039ec1ec76054d373b">これからの調べ物</h2>
+
+<ul>
+<li><code>opacity</code> プロパティ、 &lt;alphavalue&gt; の扱い
+
+<ul>
+<li>説明の意味が上手く理解できない</li>
+<li>スタッキングコンテキストを調べる必要がありそう</li>
+</ul></li>
+<li>ガモット
+
+<ul>
+<li><a href="http://home.a02.itscom.net/color/gamut/gamut.html">ひとまず</a></li>
+</ul></li>
+<li>CRT</li>
+<li>sRGB</li>
+<li>foreground color</li>
+<li>HSL と HSV の違い
+
+<ul>
+<li>&ldquo;HSL の利点に明るさと暗さが対称であること (これはたとえば HSV にはあてはまらない)&rdquo; の意味が理解できない</li>
+</ul></li>
+<li>削除された機能、 <code>@color-profile</code> at-rule とは</li>
+<li>削除された機能、 <code>flavor</code> system color とは</li>
+</ul>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/memory-wave/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/listen-arukara-sound/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>

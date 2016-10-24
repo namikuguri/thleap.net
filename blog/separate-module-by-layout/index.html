@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+  <title>配置に関するスタイルを別モジュールで定義する - thleap.net</title>
+
+
+
+  <meta name="description" content="異なる場所でも使うモジュールには配置に関するスタイルをできるだけ含まないようにしよう。">
+
+
+<meta name="keywords" content="web, design, illustration, development">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?JLA6uVvO9Sk%3D" charset="utf-8"></script>
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+  </head>
+  <body class="ease-in">
+    <header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        
+        
+          
+          
+          <li>
+            
+              <a href="/blog/" class="site-link is-active">Blog</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/work/" class="site-link">Work</a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+              <a href="/about/" class="site-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">配置に関するスタイルを別モジュールで定義する</h1>
+        <div class="metas metas-border">
+          
+            <time datetime="2015-07-02" class="metas-item">2015.07.02</time>
+            
+              <span class="metas-item">dev</span>
+            
+          
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        
+        <p>例えばこんな HTML と CSS があったとする。</p>
+
+<pre><code class="language-html">&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;block-card&quot;&gt;
+    &lt;p class=&quot;block-card-title&quot;&gt;タイトル&lt;small class=&quot;block-card-title-note&quot;&gt;（注意書き的な）&lt;/small&gt;&lt;/p&gt;
+    &lt;p class=&quot;block-card-summary&quot;&gt;ウンタラカンタラかんたらうんたらウンタラカンタラかんたらうんたら&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;block-card&quot;&gt; ... &lt;/div&gt;
+  &lt;div class=&quot;block-card&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">.block { ... }
+.block-card {
+  margin: 1em 0;
+  padding: 1em;
+  ...
+}
+.block-card-title { ... }
+.block-card-title-note { ... }
+.block-card-summary { ... }
+</code></pre>
+
+<p>すべての場合において同じように言えるわけではないけど、この場合 <code>.card</code> は独立したモジュールとして管理できる。</p>
+
+<p>そして、他の場所でも <code>.card</code> のスタイルを使う機会があり、それに配置的なプロパティ（ ここでは <code>margin: 1em 0</code> ）を必要としないのであれば、 <code>.block</code> と <code>.card</code> のモジュールは分けたほうが良いと思う。</p>
+
+<pre><code>&lt;!-- better --&gt;
+&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;block-item card&quot;&gt;
+    &lt;p class=&quot;card-title&quot;&gt;タイトル&lt;small class=&quot;card-title-note&quot;&gt;（注意書き的な）&lt;/small&gt;&lt;/p&gt;
+    &lt;p class=&quot;card-summary&quot;&gt;ウンタラカンタラかんたらうんたらウンタラカンタラかんたらうんたら&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;block-item card&quot;&gt; ... &lt;/div&gt;
+  &lt;div class=&quot;block-item card&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">.block { ... }
+.block-item {
+  margin: 1em 0;
+}
+
+.card {
+  padding: 1em;
+  ...
+}
+.card-title { ... }
+.card-title-note { ... }
+.card-summary { ... }
+</code></pre>
+
+<p>何度か自分で振り返って同じことを書いてる気がするけど、さぁやるぞ！とコーディングを開始した時は勢いで前者のように書いてしまうことが多い。作業が進むにつれて <code>margin</code> は邪魔になってきて、最後になって後者に書きなおすことになる。</p>
+
+<p>色やサイズもそうなんだけど、モジュールを組む際は <code>margin</code>, <code>float</code>, <code>position</code> などの配置に関わるプロパティは特に気をつけていこう。</p>
+
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+  
+    <li class="pagination-prev">
+      <a href="http://thleap.net/blog/tofu-omelette/">
+        <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+      </a>
+    </li>
+  
+  
+    <li class="pagination-next">
+      <a href="http://thleap.net/blog/summer-cold-return/">
+        Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </main>
+    <footer id="footer">
+  <div class="l-container">
+    <div class="site-byline">
+      Made by <span class="site-author">Daiki Takemoto</span>
+      <span class="site-license">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="site-link">CC BY-NC</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="/javascripts/analyticsTracking.js"></script>
+
+  </body>
+</html>
